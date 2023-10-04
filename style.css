@@ -174,14 +174,17 @@ html {
  */
 
 
-[data-service-content] {
+[data-service-container] {
   display: none;
 }
 
-[data-service-content="prompt"] {
-  display: block;
+[data-service-container="prompt"] {
+  display: flex;
 }
 
+[data-service-content] {
+  display: block;
+}
 
 /* --------------------------------------- */
 
@@ -197,6 +200,7 @@ html {
   padding-bottom: 120px;
   justify-content: center;
 }
+
 .home-text02 {
   color: rgb(255, 255, 255);
   font-size: 40px;
@@ -204,6 +208,7 @@ html {
   font-family: Poppins;
   font-weight: 600;
 }
+
 .home-features {
   width: 100%;
   display: flex;
@@ -217,6 +222,7 @@ html {
   justify-content: center;
   border-bottom-width: 1px;
 }
+
 .home-text03 {
   color: rgb(255, 255, 255);
   font-size: 24px;
@@ -224,10 +230,12 @@ html {
   font-family: Poppins;
   font-weight: 600;
 }
+
 .home-text04 {
   color: rgb(121, 124, 128);
   font-family: Poppins;
 }
+
 .home-text05 {
   color: rgb(255, 255, 255);
   font-size: 24px;
@@ -235,10 +243,12 @@ html {
   font-family: Poppins;
   font-weight: 600;
 }
+
 .home-text06 {
   color: rgb(121, 124, 128);
   font-family: Poppins;
 }
+
 .home-text07 {
   color: rgb(255, 255, 255);
   font-size: 24px;
@@ -246,6 +256,7 @@ html {
   font-family: Poppins;
   font-weight: 600;
 }
+
 .home-text08 {
   color: rgb(121, 124, 128);
   font-family: Poppins;
@@ -261,6 +272,7 @@ html {
   flex-direction: row;
   justify-content: center;
 }
+
 .note-content {
   gap: var(--dl-space-space-threeunits);
   flex: 1;
@@ -270,6 +282,7 @@ html {
   flex-direction: column;
   justify-content: center;
 }
+
 .note-main {
   gap: var(--dl-space-space-oneandhalfunits);
   display: flex;
@@ -277,6 +290,7 @@ html {
   flex-direction: column;
   justify-content: center;
 }
+
 .note-heading {
   color: rgb(255, 255, 255);
   font-size: 32px;
@@ -284,11 +298,13 @@ html {
   font-family: Poppins;
   font-weight: 500;
 }
+
 .note-paragraph {
   color: #CCCCCC;
   font-family: Poppins;
   line-height: 28px;
 }
+
 .note-explore-more {
   gap: var(--dl-space-space-oneandhalfunits);
   cursor: pointer;
@@ -301,15 +317,18 @@ html {
   justify-content: center;
   border-bottom-width: 1px;
 }
+
 .note-explore-more:hover {
   opacity: 0.5;
 }
+
 .note-text5 {
   color: #80FF44;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
 }
+
 .note-image {
   flex: 1;
   display: flex;
@@ -317,36 +336,45 @@ html {
   flex-direction: row;
   justify-content: flex-end;
 }
+
 .note-image1 {
   object-fit: cover;
 }
+
 @media(max-width: 991px) {
   .note-note {
     gap: var(--dl-space-space-fourunits);
     flex-direction: column;
   }
+
   .note-content {
     max-width: 100%;
   }
+
   .note-main {
     align-items: flex-start;
   }
 }
+
 @media(max-width: 767px) {
   .note-note {
     gap: var(--dl-space-space-threeunits);
   }
+
   .note-main {
     width: 100%;
     align-items: flex-start;
   }
+
   .note-heading {
     font-size: 28px;
   }
+
   .note-paragraph {
     line-height: 24px;
   }
 }
+
 @media(max-width: 479px) {
   .note-image1 {
     width: 100%;

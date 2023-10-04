@@ -135,7 +135,7 @@ serviceHeadings.forEach((heading) => {
 });
  */
 
-document.addEventListener('DOMContentLoaded', function () {
+/* document.addEventListener('DOMContentLoaded', function () {
     const serviceHeadings = document.querySelectorAll('[data-service]');
     const serviceContent = document.querySelectorAll('[data-service-content]');
 
@@ -156,6 +156,44 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+}); */
+
+document.addEventListener('DOMContentLoaded', function () {
+    const serviceHeadings = document.querySelectorAll('[data-service]');
+    const serviceContainers = document.querySelectorAll('[data-service-container]');
+
+    // Add a click event listener to each service heading
+    serviceHeadings.forEach((heading) => {
+        heading.addEventListener('click', (event) => {
+            const selectedService = event.currentTarget.getAttribute('data-service');
+
+            // Remove active state from all headings
+            serviceHeadings.forEach((head) => {
+                head.classList.remove('feature-active');
+            });
+
+            // Add active state to the clicked heading
+            event.currentTarget.classList.add('feature-active');
+
+            // Hide all service containers
+            serviceContainers.forEach((container) => {
+                container.style.display = 'none';
+            });
+
+            // Show the selected service's container
+            const containerToDisplay = document.querySelector(`[data-service-container="${selectedService}"]`);
+            if (containerToDisplay) {
+                containerToDisplay.style.display = 'flex'; // Use 'flex' to maintain the flexbox layout
+
+                // Ensure the content inside the container is also displayed
+                const contentToDisplay = containerToDisplay.querySelector(`[data-service-content="${selectedService}"]`);
+                if (contentToDisplay) {
+                    contentToDisplay.style.display = 'block';
+                }
+            }
+        });
+    });
 });
+
 
 
