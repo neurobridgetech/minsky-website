@@ -1,803 +1,577 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Planical modern template</title>
-    <meta property="og:title" content="Planical modern template" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
+<head>
+  <title>Minsky</title>
+  <meta property="og:title" content="Planical modern template" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+</head>
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
+<body>
+  <link rel="stylesheet" href="./style.css" />
+  <div>
+    <link href="./index.css" rel="stylesheet" />
 
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-  </head>
-  <body>
-    <link rel="stylesheet" href="./style.css" />
-    <div>
-      <link href="./index.css" rel="stylesheet" />
-
-      <div class="home-container">
-        <nav class="navbar-navbar navbar-root-class-name">
-          <img
-            alt="Planical7012"
-            src="public/Branding/planical7012-wzf.svg"
-            class="navbar-branding-logo"
-          />
-          <div class="navbar-nav-content">
-            <div class="navbar-nav-links">
-              <span class="navbar-link nav-link">
-                <span>Services</span>
-                <br />
-              </span>
-              <span class="nav-link">Models</span>
-              <span class="nav-link">Why Us</span>
-              <span class="nav-link">Contact</span>
-            </div>
-            <div class="get-started navbar-get-started">
-              <span class="navbar-text2">Get started</span>
-            </div>
-            <div id="open-mobile-menu" class="navbar-hamburger get-started">
-              <img
-                alt="image"
-                src="public/Icons/hamburger-200h.png"
-                class="navbar-image"
-              />
-            </div>
-          </div>
-          <div id="mobile-menu" class="navbar-mobile-menu">
-            <div class="navbar-branding">
-              <img
-                alt="image"
-                src="public/Branding/planical7012-ttpb.svg"
-                class="navbar-image1"
-              />
-              <div id="close-mobile-menu" class="navbar-container">
-                <svg viewBox="0 0 1024 1024" class="navbar-icon">
-                  <path
-                    d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <div class="navbar-nav-links1">
-              <span class="nav-link">Features</span>
-              <span class="nav-link">Why us</span>
-              <span class="nav-link">Prices</span>
-              <span class="nav-link">Contact</span>
-            </div>
-            <div class="get-started">
-              <span class="navbar-text3">Get started</span>
-            </div>
-          </div>
-          <div>
-            <div class="navbar-container2">
-              <script>
-                    /*
-                Mobile menu - Code Embed
-                */
-
-                /* listenForUrlChangesMobileMenu() makes sure that if you changes pages inside your app,
-                the mobile menu will still work*/
-
-                const listenForUrlChangesMobileMenu = () => {
-                    let url = location.href;
-                    document.body.addEventListener('click', () => {
-                        requestAnimationFrame(() => {
-                            if (url !== location.href) {
-                                runMobileMenuCodeEmbed();
-                                url = location.href;
-                            }
-                        });
-                    },
-                    true
-                    );
-                };
-
-                const runMobileMenuCodeEmbed = () => {
-                    // Mobile menu
-                    const mobileMenu = document.querySelector('#mobile-menu')
-
-                    // Buttons
-                    const closeButton = document.querySelector('#close-mobile-menu')
-                    const openButton = document.querySelector('#open-mobile-menu')
-
-                    // On openButton click, set the mobileMenu position left to -100vw
-                    openButton && openButton.addEventListener('click', function() {
-                        mobileMenu.style.transform = 'translateX(0%)'
-                    })
-
-                    // On closeButton click, set the mobileMenu position to 0vw
-                    closeButton && closeButton.addEventListener('click', function() {
-                        mobileMenu.style.transform = 'translateX(100%)'
-                    })
-                }
-
-                runMobileMenuCodeEmbed()
-                listenForUrlChangesMobileMenu()
-              </script>
-            </div>
-          </div>
-        </nav>
-        <section class="home-section">
-          <div class="home-hero">
-            <div class="home-content">
-              <main class="home-main">
-                <header class="home-header">
-                  <h1 class="home-heading">
-                    Deploy Custom Endpoints in Record Time!
-                  </h1>
-                  <span class="home-caption">
-                    Fast-Track Your LLM Service as we empower you with
-                    Lightning-Fast Customization
-                  </span>
-                </header>
-                <div class="home-buttons">
-                  <div class="home-get-started button">
-                    <span class="home-text">Try Playground</span>
-                  </div>
-                  <div class="home-get-started1 button">
-                    <span class="home-text01">Contact Us</span>
-                  </div>
-                </div>
-              </main>
-            </div>
-            <div class="home-image">
-              <img
-                alt="image"
-                src="public/SectionImages/heroimage-1500h.png"
-                class="home-image01"
-              />
-            </div>
-          </div>
-        </section>
-        <section class="home-section1">
-          <h2 class="home-text02">Services We Offer</h2>
-          <div class="home-features">
-            <header class="feature feature-active home-feature">
-              <h3 class="home-text03">Prompt-Based End-Points</h3>
-              <p class="home-text04">Doloremque laudantium</p>
-            </header>
-            <header class="feature home-feature1">
-              <h3 class="home-text05">Inference End-Points</h3>
-              <p class="home-text06">Doloremque laudantium</p>
-            </header>
-            <header class="feature home-feature2">
-              <h3 class="home-text07">Custom Model Deployment</h3>
-              <p class="home-text08">Doloremque laudantium</p>
-            </header>
-          </div>
-          <div class="note-note">
-            <div class="note-content">
-              <main class="note-main">
-                <h2 class="note-heading">
-                  <span>Prompt-Based End Points</span>
-                </h2>
-                <p class="note-paragraph">
-                  <span>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi architecto beatae.
-                  </span>
-                  <br />
-                  <br />
-                  <span>
-                    Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                    illo inventore veritatis et quasi architecto beatae.
-                  </span>
-                  <br />
-                </p>
-              </main>
-              <div class="note-explore-more">
-                <p class="note-text5"><span>Explore more -&gt;</span></p>
-              </div>
-            </div>
-            <div class="note-image">
-              <img
-                alt="image"
-                src="public/SectionImages/group%201490-1500w.png"
-                class="note-image1"
-              />
-            </div>
-          </div>
-        </section>
-        <section class="home-section2">
-          <header class="home-header01">
-            <h2 class="home-text09">
-              What Does End-Point as a Service Unlocks?
-            </h2>
-            <span class="home-text10">
-              Endpoint as a Service (EaaS) revolutionizes AI interaction by
-              offering a plug-and-play experience for both developers and users.
-              With EaaS, you can access two powerful components: Prompt-Based
-              Endpoints and Inference Endpoints, seamlessly integrated to
-              simplify your AI journey.
+    <div class="home-container">
+      <nav class="navbar-navbar navbar-root-class-name">
+        <img alt="Planical7012" src="public/Branding/Logo nobg.png" class="navbar-branding-logo" />
+        <div class="navbar-nav-content">
+          <div class="navbar-nav-links">
+            <span class="navbar-link nav-link">
+              <span>Services</span>
             </span>
-          </header>
-          <section class="home-note">
-            <div class="home-image02">
-              <img
-                alt="image"
-                src="public/SectionImages/group%201428-1200w.png"
-                class="home-image03"
-              />
-            </div>
-            <div class="home-content1">
-              <div class="home-main1">
-                <div class="home-caption1">
-                  <span class="section-head">Prompt-Based End point&nbsp;</span>
-                </div>
-                <div class="home-heading01">
-                  <h2 class="section-heading">Prompt Based End-Points</h2>
-                  <p class="section-description">
-                    Our specialized prompts act as ready-made tools,
-                    effortlessly performing specialized tasks. Whether you're a
-                    developer seeking to save time or a user in search of
-                    intuitive interactions, our prompts are designed for
-                    seamless performance.
-                  </p>
-                </div>
-              </div>
-              <div class="home-get-started2 button">
-                <span class="home-text11">Get started</span>
-              </div>
-            </div>
-          </section>
-          <section class="home-note1">
-            <div class="home-image04">
-              <img
-                alt="image"
-                src="public/SectionImages/group%201449-1200w.png"
-                class="home-image05"
-              />
-            </div>
-            <div class="home-content2">
-              <main class="home-main2">
-                <header class="home-caption2">
-                  <span class="home-section4 section-head">
-                    <span>Inference Endpoints</span>
-                    <br />
-                  </span>
-                </header>
-                <main class="home-heading03">
-                  <header class="home-header02">
-                    <h2 class="section-heading">
-                      Inference End-Points in No Time!
-                    </h2>
-                    <p class="section-description">
-                      Operating behind the scenes, our Inference Endpoints
-                      process complex AI models, making them accessible for
-                      integration into applications. This results in
-                      lightning-fast and accurate results, benefiting both
-                      developers and users alike.
-                    </p>
-                  </header>
-                </main>
-              </main>
-              <div class="home-get-started3 button">
-                <span class="home-text14">Get started</span>
-              </div>
-            </div>
-          </section>
-        </section>
-        <section class="home-section5">
-          <header class="home-header03">
-            <header class="home-left">
-              <h2 class="section-heading">Custom Models</h2>
-            </header>
-            <div class="home-right"></div>
-          </header>
-          <main class="home-cards">
-            <section class="card-card card-root-class-name">
-              <div class="card-icon">
-                <img
-                  alt="image"
-                  src="public/Icons/group%201316-200w.png"
-                  class="card-icon1"
-                />
-              </div>
-              <main class="card-content">
-                <h1 class="card-header"><span>CodeLlama</span></h1>
-                <p class="card-description">
-                  <span>CodeLlama 7B - 34B Models</span>
-                </p>
-              </main>
-            </section>
-            <section class="card-card card-root-class-name1">
-              <div class="card-icon">
-                <img
-                  alt="image"
-                  src="public/Icons/group%201314-200h.png"
-                  class="card-icon1"
-                />
-              </div>
-              <main class="card-content">
-                <h1 class="card-header"><span>Llama 2</span></h1>
-                <p class="card-description">
-                  <span>Llama 2 7B- 70B Models</span>
-                </p>
-              </main>
-            </section>
-            <section class="card-card card-root-class-name2">
-              <div class="card-icon">
-                <img
-                  alt="image"
-                  src="public/Icons/group%201317-200h.png"
-                  class="card-icon1"
-                />
-              </div>
-              <main class="card-content">
-                <h1 class="card-header"><span>Mistral</span></h1>
-                <p class="card-description"><span>Mistral 7B Model</span></p>
-              </main>
-            </section>
-          </main>
-        </section>
-        <section class="home-section6">
-          <div class="home-container1">
-            <div class="home-note2">
-              <div class="home-image06">
-                <img
-                  alt="image"
-                  src="public/SectionImages/iphone%2014%20pro%20max-1200w.png"
-                  class="home-image07"
-                />
-              </div>
-              <div class="home-content3">
-                <div class="home-caption3">
-                  <h2 class="home-heading06 section-heading">
-                    <span>About Us</span>
-                    <br />
-                  </h2>
-                  <p class="home-paragraph2 section-description">
-                    We are passionate about revolutionizing the way you interact
-                    with LLMs and endpoints. Our mission is to simplify complex
-                    technology, making it accessible and beneficial for
-                    everyone. We are committed to delivering cutting-edge
-                    solutions that enhance your productivity and creativity.
-                  </p>
-                </div>
-                <div class="home-heading07">
-                  <div class="home-header04">
-                    <h2 class="section-heading">Why Choose Us</h2>
-                  </div>
-                  <div class="accordion-accordion accordion-root-class-name">
-                    <div
-                      data-role="accordion-container"
-                      class="accordion-element"
-                    >
-                      <div class="accordion-details">
-                        <span class="accordion-text">
-                          <span>Expertise</span>
-                        </span>
-                        <span
-                          data-role="accordion-content"
-                          class="accordion-text1"
-                        >
-                          <span>
-                            Our team consists of seasoned professionals who
-                            excel in the field of AI and machine learning. You
-                            can trust us to provide you with the latest
-                            advancements and personalized services.
-                          </span>
-                        </span>
-                      </div>
-                      <svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon"
-                        class="accordion-icon"
-                      >
-                        <path
-                          d="M366 708l196-196-196-196 60-60 256 256-256 256z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <div
-                      data-role="accordion-container"
-                      class="accordion-element1 accordion-element"
-                    >
-                      <div class="accordion-details1">
-                        <span class="accordion-text2">
-                          <span>Innovation</span>
-                        </span>
-                        <span
-                          data-role="accordion-content"
-                          class="accordion-text3"
-                        >
-                          <span>
-                            Minsky is at the forefront of innovation, constantly
-                            exploring new possibilities and pushing the
-                            boundaries of what LLMs and endpoints can achieve.
-                          </span>
-                        </span>
-                      </div>
-                      <svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon"
-                        class="accordion-icon2"
-                      >
-                        <path
-                          d="M366 708l196-196-196-196 60-60 256 256-256 256z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <div
-                      data-role="accordion-container"
-                      class="accordion-element2 accordion-element"
-                    >
-                      <div class="accordion-details2">
-                        <span class="accordion-text4">
-                          <span>User-Centric</span>
-                        </span>
-                        <span
-                          data-role="accordion-content"
-                          class="accordion-text5"
-                        >
-                          <span>
-                            We prioritize your needs and preferences. Our
-                            user-centric approach ensures that our services
-                            cater to your unique requirements.
-                          </span>
-                        </span>
-                      </div>
-                      <svg
-                        viewBox="0 0 1024 1024"
-                        data-role="accordion-icon"
-                        class="accordion-icon4"
-                      >
-                        <path
-                          d="M366 708l196-196-196-196 60-60 256 256-256 256z"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <span class="nav-link">Models</span>
+            <span class="nav-link">Why Us</span>
+            <span class="nav-link">Contact</span>
+          </div>
+          <div class="get-started navbar-get-started">
+            <span class="navbar-text2">Get started</span>
+          </div>
+          <div id="open-mobile-menu" class="navbar-hamburger get-started">
+            <img alt="image" src="public/Icons/hamburger-200h.png" class="navbar-hamburger-image" />
+          </div>
+        </div>
+        <div id="mobile-menu" class="navbar-mobile-menu">
+          <div class="navbar-branding">
+            <img alt="image" src="public/Branding/planical7012-ttpb.svg" class="navbar-image1" />
+            <div id="close-mobile-menu" class="navbar-container">
+              <svg viewBox="0 0 1024 1024" class="navbar-icon">
+                <path
+                  d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z">
+                </path>
+              </svg>
             </div>
           </div>
-          <section class="home-note3">
-            <div class="home-container2">
-              <div class="home-image08">
-                <img
-                  alt="image"
-                  src="public/SectionImages/group%201428-1200w.png"
-                  class="home-image09"
-                />
+          <div class="navbar-nav-links1">
+            <span class="nav-link">Features</span>
+            <span class="nav-link">Why us</span>
+            <span class="nav-link">Prices</span>
+            <span class="nav-link">Contact</span>
+          </div>
+          <div class="get-started">
+            <span class="navbar-text3">Get started</span>
+          </div>
+        </div>
+        <div>
+          <div class="navbar-container2">
+          </div>
+        </div>
+      </nav>
+
+
+      <section class="home-section">
+        <div class="home-hero">
+          <div class="home-content">
+            <main class="home-main">
+              <header class="home-header">
+                <h1 class="home-heading">
+                  Deploy Custom Endpoints in Record Time!
+                </h1>
+                <span class="home-caption">
+                  Fast-Track Your LLM Service as we empower you with
+                  Lightning-Fast Customization
+                </span>
+              </header>
+              <div class="home-buttons">
+                <div class="home-get-started button">
+                  <span class="home-text">Try Playground</span>
+                </div>
+                <div class="home-get-started1 button">
+                  <span class="home-text01">Contact Us</span>
+                </div>
+              </div>
+            </main>
+          </div>
+          <div class="home-image">
+            <img alt="image" src="public/SectionImages/heroimage-1500h.png" class="home-image01" />
+          </div>
+        </div>
+      </section>
+
+
+      <section class="home-section1">
+        <h2 class="home-text02">Services We Offer</h2>
+        <div class="home-features">
+          <header class="feature feature-active home-feature" data-service="prompt">
+            <h3 class="home-text03">Prompt-Based End-Points</h3>
+            <p class="home-text04">Doloremque laudantium</p>
+          </header>
+          <header class="feature home-feature1" data-service="inference">
+            <h3 class="home-text05">Inference End-Points</h3>
+            <p class="home-text06">Doloremque laudantium</p>
+          </header>
+          <header class="feature home-feature2" data-service="custom">
+            <h3 class="home-text07">Custom Model Deployment</h3>
+            <p class="home-text08">Doloremque laudantium</p>
+          </header>
+        </div>
+
+        <div class="note-note" id="service-content">
+          <div class="note-content" data-service-content="prompt">
+            <main class="note-main">
+              <h2 class="note-heading">
+                <span>Prompt-Based End Points</span>
+              </h2>
+              <p class="note-paragraph">
+                <span>
+                  Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem accusantium doloremque laudantium, totam rem
+                  aperiam, eaque ipsa quae ab illo inventore veritatis et
+                  quasi architecto beatae.
+                </span>
+                <br />
+                <br />
+                <span>
+                  Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                  illo inventore veritatis et quasi architecto beatae.
+                </span>
+                <br />
+              </p>
+            </main>
+            <div class="note-explore-more">
+              <p class="note-text5"><span>Explore more -&gt;</span></p>
+            </div>
+          </div>
+         
+
+
+          <div class="note-content" data-service-content="inference">
+            <main class="note-main">
+              <h2 class="note-heading">
+                <span>Inference End Points</span>
+              </h2>
+              <p class="note-paragraph">
+                <span>
+                  Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem accusantium doloremque laudantium, totam rem
+                  aperiam, eaque ipsa quae ab illo inventore veritatis et
+                  quasi architecto beatae.
+                </span>
+                <br />
+                <br />
+                <span>
+                  Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                  illo inventore veritatis et quasi architecto beatae.
+                </span>
+                <br />
+              </p>
+            </main>
+            <div class="note-explore-more">
+              <p class="note-text5"><span>Explore more -&gt;</span></p>
+            </div>
+          </div>
+          
+
+
+
+          <div class="note-content" data-service-content="custom">
+            <main class="note-main">
+              <h2 class="note-heading">
+                <span>Custom Models</span>
+              </h2>
+              <p class="note-paragraph">
+                <span>
+                  Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem accusantium doloremque laudantium, totam rem
+                  aperiam, eaque ipsa quae ab illo inventore veritatis et
+                  quasi architecto beatae.
+                </span>
+                <br />
+                <br />
+                <span>
+                  Doloremque , totam rem aperiam, eaque ipsa quae ab
+                  illo inventore veritatis et quasi architecto beatae.
+                </span>
+                <br />
+              </p>
+            </main>
+            <div class="note-explore-more">
+              <p class="note-text5"><span>Explore more -&gt;</span></p>
+            </div>
+          </div>
+          <div class="note-image">
+            <img alt="image" src="public/SectionImages/group%201490-1500w.png" class="note-image1" />
+          </div>
+        </div>
+
+      </section>
+
+
+      <section class="home-section2">
+        <header class="home-header01">
+          <h2 class="home-text09">
+            What Does End-Point as a Service Unlocks?
+          </h2>
+          <span class="home-text10">
+            Endpoint as a Service (EaaS) revolutionizes AI interaction by
+            offering a plug-and-play experience for both developers and users.
+            With EaaS, you can access two powerful components: Prompt-Based
+            Endpoints and Inference Endpoints, seamlessly integrated to
+            simplify your AI journey.
+          </span>
+        </header>
+        <section class="home-note">
+          <div class="home-image02">
+            <img alt="image" src="public/SectionImages/group%201428-1200w.png" class="home-image03" />
+          </div>
+          <div class="home-content1">
+            <div class="home-main1">
+              <div class="home-caption1">
+                <span class="section-head">Prompt-Based End point&nbsp;</span>
+              </div>
+              <div class="home-heading01">
+                <h2 class="section-heading">Prompt Based End-Points</h2>
+                <p class="section-description">
+                  Our specialized prompts act as ready-made tools,
+                  effortlessly performing specialized tasks. Whether you're a
+                  developer seeking to save time or a user in search of
+                  intuitive interactions, our prompts are designed for
+                  seamless performance.
+                </p>
               </div>
             </div>
-            <div class="home-content4">
-              <div class="home-heading09">
-                <div class="home-header05">
-                  <h2 class="section-heading">We Are Unique</h2>
+            <div class="home-get-started2 button">
+              <span class="home-text11">Get started</span>
+            </div>
+          </div>
+        </section>
+        <section class="home-note1">
+          <div class="home-image04">
+            <img alt="image" src="public/SectionImages/group%201449-1200w.png" class="home-image05" />
+          </div>
+          <div class="home-content2">
+            <main class="home-main2">
+              <header class="home-caption2">
+                <span class="home-section4 section-head">
+                  <span>Inference Endpoints</span>
+                  <br />
+                </span>
+              </header>
+              <main class="home-heading03">
+                <header class="home-header02">
+                  <h2 class="section-heading">
+                    Inference End-Points in No Time!
+                  </h2>
+                  <p class="section-description">
+                    Operating behind the scenes, our Inference Endpoints
+                    process complex AI models, making them accessible for
+                    integration into applications. This results in
+                    lightning-fast and accurate results, benefiting both
+                    developers and users alike.
+                  </p>
+                </header>
+              </main>
+            </main>
+            <div class="home-get-started3 button">
+              <span class="home-text14">Get started</span>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="home-section5">
+        <header class="home-header03">
+          <header class="home-left">
+            <h2 class="section-heading">Custom Models</h2>
+          </header>
+          <div class="home-right"></div>
+        </header>
+        <main class="home-cards">
+          <section class="card-card card-root-class-name">
+            <div class="card-icon">
+              <img alt="image" src="public/Icons/group%201316-200w.png" class="card-icon1" />
+            </div>
+            <main class="card-content">
+              <h1 class="card-header"><span>CodeLlama</span></h1>
+              <p class="card-description">
+                <span>CodeLlama 7B - 34B Models</span>
+              </p>
+            </main>
+          </section>
+          <section class="card-card card-root-class-name1">
+            <div class="card-icon">
+              <img alt="image" src="public/Icons/group%201314-200h.png" class="card-icon1" />
+            </div>
+            <main class="card-content">
+              <h1 class="card-header"><span>Llama 2</span></h1>
+              <p class="card-description">
+                <span>Llama 2 7B- 70B Models</span>
+              </p>
+            </main>
+          </section>
+          <section class="card-card card-root-class-name2">
+            <div class="card-icon">
+              <img alt="image" src="public/Icons/group%201317-200h.png" class="card-icon1" />
+            </div>
+            <main class="card-content">
+              <h1 class="card-header"><span>Mistral</span></h1>
+              <p class="card-description"><span>Mistral 7B Model</span></p>
+            </main>
+          </section>
+        </main>
+      </section>
+      <section class="home-section6">
+        <div class="home-container1">
+          <div class="home-note2">
+            <div class="home-image06">
+              <img alt="image" src="public/SectionImages/iphone%2014%20pro%20max-1200w.png" class="home-image07" />
+            </div>
+            <div class="home-content3">
+              <div class="home-caption3">
+                <h2 class="home-heading06 section-heading">
+                  <span>About Us</span>
+                  <br />
+                </h2>
+                <p class="home-paragraph2 section-description">
+                  We are passionate about revolutionizing the way you interact
+                  with LLMs and endpoints. Our mission is to simplify complex
+                  technology, making it accessible and beneficial for
+                  everyone. We are committed to delivering cutting-edge
+                  solutions that enhance your productivity and creativity.
+                </p>
+              </div>
+              <div class="home-heading07">
+                <div class="home-header04">
+                  <h2 class="section-heading">Why Choose Us</h2>
                 </div>
-                <div class="accordion-accordion accordion-root-class-name2">
-                  <div
-                    data-role="accordion-container"
-                    class="accordion-element"
-                  >
+                <div class="accordion-accordion accordion-root-class-name">
+                  <div data-role="accordion-container" class="accordion-element">
                     <div class="accordion-details">
                       <span class="accordion-text">
-                        <span>Customisation</span>
+                        <span>Expertise</span>
                       </span>
-                      <span
-                        data-role="accordion-content"
-                        class="accordion-text1"
-                      >
+                      <span data-role="accordion-content" class="accordion-text1">
                         <span>
-                          Our tailored prompts and endpoints empower you to
-                          create unique experiences. whether you're a casual
-                          user or a developer, our platform accomodates all.
+                          Our team consists of seasoned professionals who
+                          excel in the field of AI and machine learning. You
+                          can trust us to provide you with the latest
+                          advancements and personalized services.
                         </span>
                       </span>
                     </div>
-                    <svg
-                      viewBox="0 0 1024 1024"
-                      data-role="accordion-icon"
-                      class="accordion-icon"
-                    >
-                      <path
-                        d="M366 708l196-196-196-196 60-60 256 256-256 256z"
-                      ></path>
+                    <svg viewBox="0 0 1024 1024" data-role="accordion-icon" class="accordion-icon">
+                      <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
                     </svg>
                   </div>
-                  <div
-                    data-role="accordion-container"
-                    class="accordion-element1 accordion-element"
-                  >
+                  <div data-role="accordion-container" class="accordion-element1 accordion-element">
                     <div class="accordion-details1">
                       <span class="accordion-text2">
-                        <span>Model Variety</span>
+                        <span>Innovation</span>
                       </span>
-                      <span
-                        data-role="accordion-content"
-                        class="accordion-text3"
-                      >
+                      <span data-role="accordion-content" class="accordion-text3">
                         <span>
-                          With an array of hosted models, you'll find the
-                          perfect fit for your project and custom needs.
+                          Minsky is at the forefront of innovation, constantly
+                          exploring new possibilities and pushing the
+                          boundaries of what LLMs and endpoints can achieve.
                         </span>
                       </span>
                     </div>
-                    <svg
-                      viewBox="0 0 1024 1024"
-                      data-role="accordion-icon"
-                      class="accordion-icon2"
-                    >
-                      <path
-                        d="M366 708l196-196-196-196 60-60 256 256-256 256z"
-                      ></path>
+                    <svg viewBox="0 0 1024 1024" data-role="accordion-icon" class="accordion-icon2">
+                      <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
                     </svg>
                   </div>
-                  <div
-                    data-role="accordion-container"
-                    class="accordion-element2 accordion-element"
-                  >
+                  <div data-role="accordion-container" class="accordion-element2 accordion-element">
                     <div class="accordion-details2">
                       <span class="accordion-text4">
-                        <span>Testing Environment</span>
+                        <span>User-Centric</span>
                       </span>
-                      <span
-                        data-role="accordion-content"
-                        class="accordion-text5"
-                      >
+                      <span data-role="accordion-content" class="accordion-text5">
                         <span>
-                          Our playgrounds provide a safe space for
-                          experimentation and learning.
+                          We prioritize your needs and preferences. Our
+                          user-centric approach ensures that our services
+                          cater to your unique requirements.
                         </span>
                       </span>
                     </div>
-                    <svg
-                      viewBox="0 0 1024 1024"
-                      data-role="accordion-icon"
-                      class="accordion-icon4"
-                    >
-                      <path
-                        d="M366 708l196-196-196-196 60-60 256 256-256 256z"
-                      ></path>
+                    <svg viewBox="0 0 1024 1024" data-role="accordion-icon" class="accordion-icon4">
+                      <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
                     </svg>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-        </section>
-        <section class="home-section7">
-          <div class="home-cube">
-            <div class="home-top side"></div>
-            <div class="home-front side"></div>
-            <div class="home-left1 side"></div>
           </div>
-          <main class="home-banner">
-            <div class="home-header06">
-              <h2 class="section-heading">Get Your Custom End Points Today</h2>
-              <p class="home-description section-description">
-                Lorem ipsum dolor sit amet!
-              </p>
+        </div>
+        <section class="home-note3">
+          <div class="home-container2">
+            <div class="home-image08">
+              <img alt="image" src="public/SectionImages/group%201428-1200w.png" class="home-image09" />
             </div>
-            <div class="home-buttons1">
-              <div class="home-get-started4 button">
-                <span class="home-text17">Get started</span>
+          </div>
+          <div class="home-content4">
+            <div class="home-heading09">
+              <div class="home-header05">
+                <h2 class="section-heading">We Are Unique</h2>
               </div>
-              <div class="home-book-demo button">
-                <span class="home-text18">Book a demo</span>
+              <div class="accordion-accordion accordion-root-class-name2">
+                <div data-role="accordion-container" class="accordion-element">
+                  <div class="accordion-details">
+                    <span class="accordion-text">
+                      <span>Customisation</span>
+                    </span>
+                    <span data-role="accordion-content" class="accordion-text1">
+                      <span>
+                        Our tailored prompts and endpoints empower you to
+                        create unique experiences. whether you're a casual
+                        user or a developer, our platform accomodates all.
+                      </span>
+                    </span>
+                  </div>
+                  <svg viewBox="0 0 1024 1024" data-role="accordion-icon" class="accordion-icon">
+                    <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
+                  </svg>
+                </div>
+                <div data-role="accordion-container" class="accordion-element1 accordion-element">
+                  <div class="accordion-details1">
+                    <span class="accordion-text2">
+                      <span>Model Variety</span>
+                    </span>
+                    <span data-role="accordion-content" class="accordion-text3">
+                      <span>
+                        With an array of hosted models, you'll find the
+                        perfect fit for your project and custom needs.
+                      </span>
+                    </span>
+                  </div>
+                  <svg viewBox="0 0 1024 1024" data-role="accordion-icon" class="accordion-icon2">
+                    <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
+                  </svg>
+                </div>
+                <div data-role="accordion-container" class="accordion-element2 accordion-element">
+                  <div class="accordion-details2">
+                    <span class="accordion-text4">
+                      <span>Testing Environment</span>
+                    </span>
+                    <span data-role="accordion-content" class="accordion-text5">
+                      <span>
+                        Our playgrounds provide a safe space for
+                        experimentation and learning.
+                      </span>
+                    </span>
+                  </div>
+                  <svg viewBox="0 0 1024 1024" data-role="accordion-icon" class="accordion-icon4">
+                    <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
+                  </svg>
+                </div>
               </div>
             </div>
-          </main>
+          </div>
         </section>
-        <footer class="home-footer">
-          <div class="home-content5">
-            <main class="home-main-content">
-              <div class="home-content6">
-                <header class="home-main3">
-                  <div class="home-header07">
-                    <img
-                      alt="image"
-                      src="public/Branding/planical7012-ttpb.svg"
-                      class="home-branding"
-                    />
-                    <span class="home-text19">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </span>
+      </section>
+      <section class="home-section7">
+        <div class="home-cube">
+          <div class="home-top side"></div>
+          <div class="home-front side"></div>
+          <div class="home-left1 side"></div>
+        </div>
+        <main class="home-banner">
+          <div class="home-header06">
+            <h2 class="section-heading">Get Your Custom End Points Today</h2>
+            <p class="home-description section-description">
+              Lorem ipsum dolor sit amet!
+            </p>
+          </div>
+          <div class="home-buttons1">
+            <div class="home-get-started4 button">
+              <span class="home-text17">Get started</span>
+            </div>
+            <div class="home-book-demo button">
+              <span class="home-text18">Book a demo</span>
+            </div>
+          </div>
+        </main>
+      </section>
+      <footer class="home-footer">
+        <div class="home-content5">
+          <main class="home-main-content">
+            <div class="home-content6">
+              <header class="home-main3">
+                <div class="home-header07">
+                  <img alt="image" src="public/Branding/Logo nobg.png" class="home-branding" />
+                  <span class="home-text19">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </span>
+                </div>
+                <div class="home-socials">
+                  <a href="https://example.com" target="_blank" rel="noreferrer noopener" class="home-link">
+                    <img alt="image" src="public/Icons/linkedin-200h.png" class="social" />
+                  </a>
+                  <a href="https://example.com" target="_blank" rel="noreferrer noopener" class="home-link1">
+                    <img alt="image" src="public/Icons/instagram-200h.png" class="social" />
+                  </a>
+                  <a href="https://example.com" target="_blank" rel="noreferrer noopener" class="home-link2">
+                    <img alt="image" src="public/Icons/twitter-200h.png" class="social" />
+                  </a>
+                </div>
+              </header>
+              <header class="home-categories">
+                <div class="home-category">
+                  <div class="home-header08">
+                    <span class="footer-header">Solutions</span>
                   </div>
-                  <div class="home-socials">
-                    <a
-                      href="https://example.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      class="home-link"
-                    >
-                      <img
-                        alt="image"
-                        src="public/Icons/linkedin-200h.png"
-                        class="social"
-                      />
-                    </a>
-                    <a
-                      href="https://example.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      class="home-link1"
-                    >
-                      <img
-                        alt="image"
-                        src="public/Icons/instagram-200h.png"
-                        class="social"
-                      />
-                    </a>
-                    <a
-                      href="https://example.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      class="home-link2"
-                    >
-                      <img
-                        alt="image"
-                        src="public/Icons/twitter-200h.png"
-                        class="social"
-                      />
-                    </a>
-                  </div>
-                </header>
-                <header class="home-categories">
-                  <div class="home-category">
-                    <div class="home-header08">
-                      <span class="footer-header">Solutions</span>
-                    </div>
-                    <div class="home-links">
-                      <span class="footer-link">HyprCodr</span>
-                    </div>
-                  </div>
-                  <div class="home-category1">
-                    <div class="home-header09">
-                      <span class="footer-header">Company</span>
-                    </div>
-                    <div class="home-links1">
-                      <span class="footer-link">About</span>
-                      <span class="footer-link">Team</span>
-                      <span class="footer-link">News</span>
-                    </div>
-                  </div>
-                </header>
-              </div>
-              <section class="home-copyright">
-                <span class="home-text26">
-                  © 2023 All Rights Reserved. Product by Neurobridge.Tech
-                </span>
-              </section>
-            </main>
-            <main class="home-subscribe">
-              <main class="home-main4">
-                <h1 class="home-heading12">Subscribe to our newsletter</h1>
-                <div class="home-input-field">
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    class="home-textinput input"
-                  />
-                  <div class="home-buy button">
-                    <span class="home-text27">-&gt;</span>
-                    <span class="home-text28">
-                      <span>Subscribe now</span>
-                      <br />
-                    </span>
+                  <div class="home-links">
+                    <span class="footer-link">HyprCodr</span>
                   </div>
                 </div>
-              </main>
-              <h1 class="home-notice">
-                By subscribing to our newsletter you agree with our Terms and
-                Conditions.
-              </h1>
-            </main>
-            <section class="home-copyright1">
-              <span class="home-text31">
-                © 2022 latitude. All Rights Reserved.
+                <div class="home-category1">
+                  <div class="home-header09">
+                    <span class="footer-header">Company</span>
+                  </div>
+                  <div class="home-links1">
+                    <span class="footer-link">About</span>
+                    <span class="footer-link">Team</span>
+                    <span class="footer-link">News</span>
+                  </div>
+                </div>
+              </header>
+            </div>
+            <section class="home-copyright">
+              <span class="home-text26">
+                © 2023 All Rights Reserved. Product by Neurobridge.Tech
               </span>
             </section>
-          </div>
-        </footer>
-        <div>
-          <div class="home-container4">
-            <script>
-                  /*
-              Accordion - Code Embed
-              */
+          </main>
+          <main class="home-subscribe">
+            <main class="home-main4">
+              <h1 class="home-heading12">Subscribe to our newsletter</h1>
+              <div class="home-input-field">
+                <input type="email" placeholder="Enter your email" class="home-textinput input" />
+                <div class="home-buy button">
+                  <span class="home-text27">-&gt;</span>
+                  <span class="home-text28">
+                    <span>Subscribe now</span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </main>
+            <h1 class="home-notice">
+              By subscribing to our newsletter you agree with our Terms and
+              Conditions.
+            </h1>
+          </main>
+          <section class="home-copyright1">
+            <span class="home-text31">
+              © 2022 latitude. All Rights Reserved.
+            </span>
+          </section>
+        </div>
+      </footer>
+      <div>
+        <div class="home-container4">
 
-              /* listenForUrlChangesAccordion() makes sure that if you changes pages inside your app,
-              the Accordions will still work*/
-
-              const listenForUrlChangesAccordion = () => {
-                    let url = location.href;
-                    document.body.addEventListener(
-                      'click',
-                      () => {
-                        requestAnimationFrame(() => {
-                          if (url !== location.href) {
-                            runAccordionCodeEmbed();
-                            url = location.href;
-                          }
-                        });
-                      },
-                      true
-                    );
-                  };
-
-
-              const runAccordionCodeEmbed = () => {
-                  const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
-                  const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
-                  const accordionIcons = document.querySelectorAll('[data-role='accordion-icon']'); // All accordion icons
-
-                  accordionContents.forEach((accordionContent) => {
-                      accordionContent.style.display = 'none'; //Hides all accordion contents
-                  });
-
-                  accordionContainers.forEach((accordionContainer, index) => {
-                      accordionContainer.addEventListener('click', () => {
-                          accordionContents.forEach((accordionContent) => {
-                          accordionContent.style.display = 'none'; //Hides all accordion contents
-                          });
-
-                          accordionIcons.forEach((accordionIcon) => {
-                              accordionIcon.style.transform = 'rotate(0deg)'; // Resets all icon transforms to 0deg (default)
-                          });
-
-                          accordionContents[index].style.display = 'flex'; // Shows accordion content
-                          accordionIcons[index].style.transform = 'rotate(180deg)'; // Rotates accordion icon 180deg
-                      });
-                  });
-              }
-
-              runAccordionCodeEmbed()
-              listenForUrlChangesAccordion()
-
-              /*
-              Here's what the above is doing:
-                  1. Selects all accordion containers, contents, and icons
-                  2. Hides all accordion contents
-                  3. Adds an event listener to each accordion container
-                  4. When an accordion container is clicked, it:
-                      - Hides all accordion contents
-                      - Resets all icon transforms to 0deg (default)
-                      - Checks if this container has class 'accordion-open'
-                          - If it does, it removes class 'accordion-open'
-                          - If it doesn't, it:
-                              - Removes class 'accordion-open' from all containers
-                              - Adds class 'accordion-open' to this container
-                              - Shows accordion content
-                              - Rotates accordion icon 180deg
-              */
-            </script>
-          </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+<script src="js.js"></script>
+
 </html>
