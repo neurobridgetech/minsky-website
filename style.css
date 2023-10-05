@@ -196,7 +196,12 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   /* Add a linear gradient to make the image diffused from the left and more prominent on the right */
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('public/SectionImages/hero-image-nobg-min.png');
+  /* background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('public/SectionImages/hero-image-nobg-min.png'); */
+  /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
+  background-image: 
+  linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), /* Left to right gradient */
+  linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), /* Top to bottom gradient */
+  url('public/SectionImages/hero-image-nobg-min.png');
 }
 
 @media(max-width: 767px) {
