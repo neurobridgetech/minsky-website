@@ -1169,7 +1169,6 @@
 }
 @media(max-width: 991px) {
   .home-section {
-    height: auto;
     padding-left: 0px;
     padding-right: 0px;
   }
