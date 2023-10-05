@@ -212,4 +212,29 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+/* 
+document.getElementById("openFormButton").addEventListener("click", openForm);
 
+function openForm() {
+  document.getElementById("popupForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("popupForm").style.display = "none";
+}
+ */
+
+function openForm() {
+    const form = document.getElementById("popupForm");
+    const btn = document.getElementById("openFormButton");
+
+    if (btn.textContent === "Submit") {
+        // If you want to submit the form when the button says "Submit", you can do so here.
+        // For now, we'll just toggle the form and button text.
+        form.classList.remove("show");
+        btn.textContent = "Get started";
+    } else {
+        form.classList.add("show");
+        btn.textContent = "Submit";
+    }
+}
