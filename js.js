@@ -112,7 +112,17 @@ document.addEventListener('DOMContentLoaded', function () {
         closeButton && closeButton.addEventListener('click', function () {
             mobileMenu.style.transform = 'translateX(100%)'
         })
+
+        // Add event listener to all links in the mobile menu
+        const links = mobileMenu.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', function () {
+                // On link click, close the mobile menu
+                mobileMenu.style.transform = 'translateX(100%)'
+            })
+        })
     }
+
 
     runMobileMenuCodeEmbed()
     listenForUrlChangesMobileMenu()

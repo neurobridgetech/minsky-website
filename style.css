@@ -191,6 +191,13 @@ html {
 }
 
 /* --------------------------------------- */
+.home-section {
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Add a linear gradient to make the image diffused from the left and more prominent on the right */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('public/SectionImages/hero-image-nobg.png');
+}
 
 .home-section1 {
   flex: 1;
