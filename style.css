@@ -186,7 +186,7 @@ html {
   display: block;
 }
 
-.feature{
+.feature {
   cursor: pointer;
 }
 
@@ -197,6 +197,12 @@ html {
   background-size: cover;
   /* Add a linear gradient to make the image diffused from the left and more prominent on the right */
   background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('public/SectionImages/hero-image-nobg.png');
+}
+
+@media(max-width: 767px) {
+  .home-section {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('public/SectionImages/hero-image-nobg1.png');
+  }
 }
 
 .home-section1 {
