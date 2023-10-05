@@ -458,7 +458,7 @@
 }
 
 .home-section2 {
-  gap: var(--dl-space-space-sixunits);
+  /* gap: var(--dl-space-space-sixunits); */
   flex: 1;
   width: 100%;
   display: flex;
@@ -676,7 +676,7 @@
   justify-content: center;
 }
 .home-section6 {
-  gap: var(--dl-space-space-fiveunits);
+  /* gap: var(--dl-space-space-fiveunits); */
   flex: 1;
   width: 100%;
   display: flex;

@@ -186,6 +186,10 @@ html {
   display: block;
 }
 
+.feature{
+  cursor: pointer;
+}
+
 /* --------------------------------------- */
 
 .home-section1 {
@@ -281,6 +285,7 @@ html {
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
+  text-align: justify;
 }
 
 .note-main {

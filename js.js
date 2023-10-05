@@ -33,22 +33,28 @@ const runAccordionCodeEmbed = () => {
 
     accordionContainers.forEach((accordionContainer, index) => {
         accordionContainer.addEventListener('click', () => {
-            accordionContents.forEach((accordionContent) => {
-                accordionContent.style.display = 'none'; // Hides all accordion contents
-            });
+            if (accordionContents[index].style.display === 'flex') {
+                accordionContents[index].style.display = 'none'; // Hides accordion content
+                accordionIcons[index].style.transform = 'rotate(0deg)'; // Resets icon transform to 0deg (default)
+            } else {
+                accordionContents.forEach((accordionContent) => {
+                    accordionContent.style.display = 'none'; // Hides all accordion contents
+                });
 
-            accordionIcons.forEach((accordionIcon) => {
-                accordionIcon.style.transform = 'rotate(0deg)'; // Resets all icon transforms to 0deg (default)
-            });
+                accordionIcons.forEach((accordionIcon) => {
+                    accordionIcon.style.transform = 'rotate(0deg)'; // Resets all icon transforms to 0deg (default)
+                });
 
-            accordionContents[index].style.display = 'flex'; // Shows accordion content
-            accordionIcons[index].style.transform = 'rotate(180deg)'; // Rotates accordion icon 180deg
+                accordionContents[index].style.display = 'flex'; // Shows accordion content
+                accordionIcons[index].style.transform = 'rotate(180deg)'; // Rotates accordion icon 180deg
+            }
         });
     });
 };
 
 runAccordionCodeEmbed();
-listenForUrlChangesAccordion(); 
+listenForUrlChangesAccordion();
+
 
 /*
 Here's what the above is doing:
