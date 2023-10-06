@@ -285,7 +285,6 @@
         </section>
       </section>
 
-
       <section id="models" class="home-section5">
         <header class="home-header03">
           <header class="home-left">
@@ -293,49 +292,145 @@
           </header>
           <div class="home-right"></div>
         </header>
-        <main class="home-cards">
-          <section class="card-card card-root-class-name">
-            <div class="card-icon">
-              <img alt="image" src="public/Icons/group%201316-200w.png" class="card-icon1" />
+        <div id="container">
+          <div id="slider-container">
+            <span onclick="slideRight()" class="btn"></span>
+            <div id="slider">
+              <div class="slide"><span>
+                  <main class="card-content card-card">
+                    <h1 class="card-header"><span>CodeLlama</span></h1>
+                    <p class="card-description">
+                      <span>CodeLlama 7B - 34B Models</span>
+                    </p>
+                  </main>
+                </span>
+              </div>
+              <div class="slide"><span>
+                  <main class="card-content card-card">
+                    <h1 class="card-header"><span>Llama 2</span></h1>
+                    <p class="card-description">
+                      <span>Llama 2 7B - 70B Models</span>
+                    </p>
+                  </main>
+                </span>
+              </div>
+              <div class="slide"><span>
+                  <main class="card-content card-card">
+                    <h1 class="card-header"><span>Mistral</span></h1>
+                    <p class="card-description">
+                      <span>Mistral 7B Models</span>
+                    </p>
+                  </main>
+                </span>
+              </div>
+              <div class="slide"><span>
+                  <main class="card-content card-card">
+                    <h1 class="card-header"><span>RedPajama</span></h1>
+                    <p class="card-description">
+                      <span>Red Pajama 7B Model</span>
+                    </p>
+                  </main>
+                </span>
+              </div>
+              <div class="slide"><span>
+                  <main class="card-content card-card">
+                    <h1 class="card-header"><span>Falcon</span></h1>
+                    <p class="card-description">
+                      <span>Falcon 16B Model/span>
+                    </p>
+                  </main>
+                </span>
+              </div>
+              <div class="slide"><span>
+                  <main class="card-content card-card">
+                    <h1 class="card-header"><span>Dolly v2</span></h1>
+                    <p class="card-description">
+                      <span>Dolly v2 3B Model</span>
+                    </p>
+                  </main>
+                </span>
+              </div>
             </div>
-            <main class="card-content">
-              <h1 class="card-header"><span>CodeLlama</span></h1>
-              <p class="card-description">
-                <span>CodeLlama 7B - 34B Models</span>
-              </p>
-            </main>
-          </section>
-          <section class="card-card card-root-class-name1">
-            <div class="card-icon">
-              <img alt="image" src="public/Icons/group%201314-200h.png" class="card-icon1" />
-            </div>
-            <main class="card-content">
-              <h1 class="card-header"><span>Llama 2</span></h1>
-              <p class="card-description">
-                <span>Llama 2 7B- 70B Models</span>
-              </p>
-            </main>
-          </section>
-          <section class="card-card card-root-class-name2">
-            <div class="card-icon">
-              <img alt="image" src="public/Icons/group%201317-200h.png" class="card-icon1" />
-            </div>
-            <main class="card-content">
-              <h1 class="card-header"><span>Mistral</span></h1>
-              <p class="card-description"><span>Mistral 7B Model<br><br></span></p>
-            </main>
-          </section>
-          <section class="card-card card-root-class-name2">
-            <div class="card-icon">
-              <img alt="image" src="public/Icons/group%201317-200h.png" class="card-icon1" />
-            </div>
-            <main class="card-content">
-              <h1 class="card-header"><span>And</span></h1>
-              <p class="card-description"><span>Many More Models!<br><br></span></p>
-            </main>
-          </section>
-        </main>
+            <span onclick="slideLeft()" class="btn"></span>
+          </div>
+        </div>
+
       </section>
+
+
+      <!-- <section id="models" class="home-section5">
+        <header class="home-header03">
+          <header class="home-left">
+            <h2 class="section-heading">Custom Models</h2>
+          </header>
+          <div class="home-right"></div>
+        </header>
+        <div id="slider-container">
+          <span onclick="slideRight()" class="btn"></span>
+          <main id="slider" class="home-cards">
+            <section class="card-card card-root-class-name slide">
+              <div class="card-icon">
+                <img alt="image" src="public/Icons/group%201316-200w.png" class="card-icon1" />
+              </div>
+              <main class="card-content">
+                <h1 class="card-header"><span>CodeLlama</span></h1>
+                <p class="card-description">
+                  <span>CodeLlama 7B - 34B Models</span>
+                </p>
+              </main>
+            </section>
+            <section class="card-card card-root-class-name1 slide">
+              <div class="card-icon">
+                <img alt="image" src="public/Icons/group%201314-200h.png" class="card-icon1" />
+              </div>
+              <main class="card-content">
+                <h1 class="card-header"><span>Llama 2</span></h1>
+                <p class="card-description">
+                  <span>Llama 2 7B- 70B Models</span>
+                </p>
+              </main>
+            </section>
+            <section class="card-card card-root-class-name2 slide">
+              <div class="card-icon">
+                <img alt="image" src="public/Icons/group%201317-200h.png" class="card-icon1" />
+              </div>
+              <main class="card-content">
+                <h1 class="card-header"><span>Mistral</span></h1>
+                <p class="card-description"><span>Mistral 7B Model<br><br></span></p>
+              </main>
+            </section>
+            <section class="card-card card-root-class-name2 slide">
+              <div class="card-icon">
+                <img alt="image" src="public/Icons/group%201317-200h.png" class="card-icon1" />
+              </div>
+              <main class="card-content">
+                <h1 class="card-header"><span>Red Pajamas</span></h1>
+                <p class="card-description"><span>Red Pajamas Model<br><br></span></p>
+              </main>
+            </section>
+            <section class="card-card card-root-class-name2 slide">
+              <div class="card-icon">
+                <img alt="image" src="public/Icons/group%201317-200h.png" class="card-icon1" />
+              </div>
+              <main class="card-content">
+                <h1 class="card-header"><span>GPT2</span></h1>
+                <p class="card-description"><span>GPT2 Model<br><br></span></p>
+              </main>
+            </section>
+            <section class="card-card card-root-class-name2 slide">
+              <div class="card-icon">
+                <img alt="image" src="public/Icons/group%201317-200h.png" class="card-icon1" />
+              </div>
+              <main class="card-content">
+                <h1 class="card-header"><span>And</span></h1>
+                <p class="card-description"><span>Many More Models!<br><br></span></p>
+              </main>
+            </section>
+          </main>
+          <span onclick="slideLeft()" class="btn"></span>
+        </div>
+      </section> -->
+
 
 
       <section id="why-us" class="home-section6">
