@@ -324,24 +324,32 @@ function slideLeft() {
     }
 };
 
-
 document.addEventListener("DOMContentLoaded", function () {
-    const rotatingTexts = ['Efficiently', 'Cheaply', 'Effectively'];
+    const rotatingTexts = ['Efficiently', 'Cheaply', 'Easily', 'Upto 128K Context'];
     let currentIndex = 0;
     const rotatingTextElement = document.getElementById('rotating-text');
 
-    setInterval(function () {
-        // Fade out the current text
-        rotatingTextElement.style.opacity = 0;
+    function typeText(text, callback) {
+        let index = 0;
+        const interval = setInterval(function () {
+            rotatingTextElement.textContent += text[index];
+            index++;
+            if (index === text.length) {
+                clearInterval(interval);
+                setTimeout(callback, 2000);  // Wait for 2 seconds before starting the next word
+            }
+        }, 100);  // Speed of typing
+    }
 
-        // After fading out, change the text and fade it back in
-        setTimeout(function () {
+    function changeText() {
+        rotatingTextElement.textContent = '';  // Clear current text
+        typeText(rotatingTexts[currentIndex], function () {
             currentIndex = (currentIndex + 1) % rotatingTexts.length;
-            rotatingTextElement.textContent = rotatingTexts[currentIndex];
-            rotatingTextElement.style.opacity = 1;
-        }, 500); // This should match the transition duration in CSS
+            changeText();
+        });
+    }
 
-    }, 3000); // Change text every 3 seconds
+    changeText();
 });
 
 /* ---------------------------------- */

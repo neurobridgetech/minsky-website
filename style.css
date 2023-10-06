@@ -191,9 +191,31 @@ html {
 }
 
 #rotating-text {
-  transition: opacity 0.5s;
   color: #4CAF50;
+  white-space: nowrap;
+  /* Prevent text wrapping */
 }
+
+#rotating-text:after {
+  content: '|';
+  /* The typewriter cursor */
+  animation: blink 1s infinite;
+  color: #4CAF50;
+  /* Make the cursor green as well */
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
 
 
 /* --------------------------------------- */
@@ -429,7 +451,7 @@ html {
   width: 85vw;
   max-width: 1400px;
   /* background: #54d5e4; */
- /*  box-shadow: 5px 5px 8px gray inset; */
+  /*  box-shadow: 5px 5px 8px gray inset; */
   position: relative;
   overflow: hidden;
   padding: 20px;

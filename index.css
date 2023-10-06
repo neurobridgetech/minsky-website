@@ -489,8 +489,9 @@
 
 .home-heading {
   color: rgb(255, 255, 255);
-  font-size: 64px;
+  font-size: 60px;
   align-self: stretch;
+  max-width: 607px;
   font-style: normal;
   font-family: Poppins;
   font-weight: 600;
