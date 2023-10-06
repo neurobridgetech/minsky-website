@@ -323,4 +323,25 @@ function slideLeft() {
         buttons[0].classList.remove('inactive');
     }
 };
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const rotatingTexts = ['Efficiently', 'Cheaply', 'Effectively'];
+    let currentIndex = 0;
+    const rotatingTextElement = document.getElementById('rotating-text');
+
+    setInterval(function () {
+        // Fade out the current text
+        rotatingTextElement.style.opacity = 0;
+
+        // After fading out, change the text and fade it back in
+        setTimeout(function () {
+            currentIndex = (currentIndex + 1) % rotatingTexts.length;
+            rotatingTextElement.textContent = rotatingTexts[currentIndex];
+            rotatingTextElement.style.opacity = 1;
+        }, 500); // This should match the transition duration in CSS
+
+    }, 3000); // Change text every 3 seconds
+});
+
 /* ---------------------------------- */

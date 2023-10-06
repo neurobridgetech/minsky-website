@@ -190,6 +190,12 @@ html {
   cursor: pointer;
 }
 
+#rotating-text {
+  transition: opacity 0.5s;
+  color: #4CAF50;
+}
+
+
 /* --------------------------------------- */
 .home-section {
   background-position: right center;
