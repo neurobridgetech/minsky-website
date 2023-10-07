@@ -150,6 +150,50 @@ html {
 
 /* --------------------------------------- */
 
+.home-checkmarks li {
+  margin-bottom: 15px; /* Adjust this value as needed */
+}
+
+/* Adjust line spacing within bullet points */
+.home-checkmarks li div {
+  line-height: 1.5; /* Adjust this value as needed */
+}
+
+ul.home-checkmarks {
+  list-style-type: none;
+  color: #f1f1f1;
+  padding: 0;
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+ul.home-checkmarks li {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mark-icon {
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  align-items: center;
+  border-radius: 50%;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #292929;
+}
+
+.mark-icon1 {
+  fill: #C6FF4B;
+  width: 12px;
+  height: 12px;
+}
 
 /* --------------- Added CSS--------------- */
 /* .home-section {
@@ -449,7 +493,7 @@ html {
 #slider-container {
   height: 300px;
   width: 85vw;
-  max-width: 1400px;
+  max-width: 90%;
   /* background: #54d5e4; */
   /*  box-shadow: 5px 5px 8px gray inset; */
   position: relative;
