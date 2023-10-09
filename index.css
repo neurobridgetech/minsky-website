@@ -575,10 +575,26 @@
   color: rgb(194, 198, 204);
   width: 100%;
   max-width: 900px;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-halfunit);
   text-align: center;
   font-family: Poppins;
   line-height: 28px;
 }
+
+.home-text11 {
+  color: rgb(194, 198, 204);
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+
+
+  font-family: Poppins;
+  line-height: 28px;
+}
+
+
+
 
 .home-note {
   width: 100%;
@@ -1023,6 +1039,18 @@
   align-items: center;
   border-radius: 20px;
   justify-content: space-between;
+  background-color: #292929;
+}
+
+.home-banner-landing {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-fiveunits);
+  z-index: 50;
+  max-width: 1200px;
+  align-items: center;
+  border-radius: 20px;
+  justify-content: center;
   background-color: #292929;
 }
 

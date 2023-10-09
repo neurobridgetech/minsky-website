@@ -156,7 +156,11 @@ html {
 
 /* Adjust line spacing within bullet points */
 .home-checkmarks li div {
-  line-height: 1.5; /* Adjust this value as needed */
+  line-height: 2; /* Adjust this value as needed */
+}
+
+li {
+  line-height: 2; /* Adjust this value as needed */
 }
 
 ul.home-checkmarks {
@@ -235,7 +239,7 @@ ul.home-checkmarks li {
 }
 
 #rotating-text {
-  color: #4CAF50;
+  color: #80FF44;
   white-space: nowrap;
   /* Prevent text wrapping */
 }
@@ -244,7 +248,7 @@ ul.home-checkmarks li {
   content: '|';
   /* The typewriter cursor */
   animation: blink 1s infinite;
-  color: #4CAF50;
+  color: #80FF44;
   /* Make the cursor green as well */
 }
 
