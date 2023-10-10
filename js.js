@@ -227,17 +227,19 @@ function closeForm() {
 function openForm() {
     const form = document.getElementById("popupForm");
     const btn = document.getElementById("openFormButton");
+    const bannerContent = document.getElementById("banner-content");
 
     if (btn.textContent === "Submit") {
-        // If you want to submit the form when the button says "Submit", you can do so here.
-        // For now, we'll just toggle the form and button text.
-        form.classList.remove("show");
+        form.style.display = "none";
+        bannerContent.style.display = "block";
         btn.textContent = "Get started";
     } else {
-        form.classList.add("show");
+        form.style.display = "block";
+        bannerContent.style.display = "none";
         btn.textContent = "Submit";
     }
 }
+
 
 
 /* ------------slider----------------- */

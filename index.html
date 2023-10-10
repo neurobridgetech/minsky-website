@@ -112,45 +112,68 @@
         </div>
       </section>
 
+
       <section class="home-section1">
-        <main class="home-banner-landing">
-          <header class="home-header01">
-            <h2 class="home-text09"> The Future of AI is High-Context </h2>
-            <span class="home-text10"> In the age of information, depth matters. Minsky is not just another LLM
-              provider;
-              we're the pioneers of high-context AI. With models boasting a context range from 2k to 128k tokens, we're
-              pushing the boundaries of what's possible. But what does this mean for you? </span>
-            <div class="home-heading01">
-              <ul class="home-checkmarks">
-                <li>
-                  <div class="mark-icon">
-                    <svg viewBox="0 0 1024 1024" class="mark-icon1">
-                      <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
-                    </svg>
-                  </div> ROI Boost: High-context models can understand and generate content with more depth, ensuring
-                  accurate and comprehensive results. This leads to better customer interactions, fewer errors, and more
-                  conversions.
-                </li>
-                <li>
-                  <div class="mark-icon">
-                    <svg viewBox="0 0 1024 1024" class="mark-icon1">
-                      <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
-                    </svg>
-                  </div> Operational Efficiency: Automate complex tasks, reduce manual interventions, and streamline
-                  operations.
-                </li>
-                <li>
-                  <div class="mark-icon">
-                    <svg viewBox="0 0 1024 1024" class="mark-icon1">
-                      <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
-                    </svg>
-                  </div> Enhanced User Experience: Deliver answers that don't just satisfy, but inspire, leading to
-                  higher
-                  user retention and engagement.
-                </li>
-              </ul>
-            </div>
+        <header class="merged-header">
+          <header class="merged-left">
+            <h2 class="home-heading">
+              <span>The Future of AI is </span>
+              <br />
+              <span style="color: #80FF44;">High-Context</span>
+            </h2>
           </header>
+          <div class="merged-right">
+            <p class="merged-paragraph home-text10">
+              In the age of information, depth matters. Minsky is not just another LLM
+              provider; we're the pioneers of high-context AI. With models boasting a context range from <span
+                style="color: #80FF44;">2K to 128K
+                tokens</span>, we're pushing the boundaries of what's possible. But what does this mean for you?
+            </p>
+          </div>
+        </header>
+        <main class="merged-cards">
+          <section class="merged-card merged-root-class-name">
+            <div class="merged-icon">
+              <img alt="image" src="/public/Icons/money.png" class="merged-icon1" />
+            </div>
+            <main class="merged-content">
+              <h1 class="merged-header-text"><span>Operational Efficiency</span></h1>
+              <p class="merged-card-desc">
+                <span>
+                  Automate complex tasks, reduce manual interventions, and streamline
+                  operations. Achieve faster results with fewer resources, enhancing productivity.
+                </span>
+              </p>
+            </main>
+          </section>
+          <section class="merged-card merged-root-class-name1">
+            <div class="merged-icon">
+              <img alt="image" src="/public/Icons/speedometer.png" class="merged-icon1" />
+            </div>
+            <main class="merged-content">
+              <h1 class="merged-header-text"><span>ROI Boost</span></h1>
+              <p class="merged-card-desc">
+                <span>
+                  Use high-context models for deeper content understanding and better precision resulting in enhanced
+                  customer interactions, reduced errors, and increased conversions.
+                </span>
+              </p>
+            </main>
+          </section>
+          <section class="merged-card merged-root-class-name2">
+            <div class="merged-icon">
+              <img alt="image" src="/public/Icons/best-customer-experience.png" class="merged-icon1" />
+            </div>
+            <main class="merged-content">
+              <h1 class="merged-header-text"><span>Enhanced User Experience</span></h1>
+              <p class="merged-card-desc">
+                <span>
+                  Deliver answers that don't just satisfy, but inspire, leading to
+                  higher user retention and engagement. <br><br>
+                </span>
+              </p>
+            </main>
+          </section>
         </main>
       </section>
 
@@ -643,6 +666,7 @@
           </div>
         </div>
       </section>
+
       <section id="contact-us" class="home-section7">
         <div class="home-cube">
           <div class="home-top side"></div>
@@ -650,39 +674,41 @@
           <div class="home-left1 side"></div>
         </div>
         <main class="home-banner">
-          <div class="home-header06">
+          <div class="home-header06" id="banner-content">
             <h2 class="section-heading">Get Your Custom Endpoints Today</h2>
             <p class="home-description section-description">
               <!-- Lorem ipsum dolor sit amet! -->
             </p>
-            <div id="popupForm" class="form-popup">
-              <form action="/submit_form" class="form-container">
-                <h1>Contact Us</h1>
-                <label for="name">
-                  <b>Name</b>
-                </label>
-                <input type="text" placeholder="Enter Name" name="name" required>
-                <label for="email">
-                  <b>Email</b>
-                </label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-                <label for="message">
-                  <b>Message</b>
-                </label>
-                <textarea placeholder="Enter Message" name="message" required></textarea>
-                <button type="submit" class="btn">Submit</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-              </form>
-            </div>
+          </div>
+          <div id="popupForm" class="form-popup">
+            <form action="/submit_form" class="form-container">
+              <h1>Contact Us</h1>
+              <label for="name">
+                <b>Name</b>
+              </label>
+              <input class="home-textinput input" type="text" placeholder="Enter Name" name="name" required>
+              <label for="email">
+                <b>Email</b>
+              </label>
+              <input class="home-textinput " type="text" placeholder="Enter Email" name="email" required>
+              <label for="message">
+                <b>Message</b>
+              </label>
+              <textarea class="home-textinput input" placeholder="Enter Message" name="message" required></textarea>
+              <button type="submit" class="btn">Submit</button>
+            </form>
           </div>
           <div class="home-buttons1">
-            <div class="home-get-started4 button">
+            <div class="home-get-started4 button" onclick="openForm()">
               <span class="home-text17" id="openFormButton">Get started</span>
             </div>
+
             <!-- <div class="home-book-demo button"><span class="home-text18">Book a demo</span></div> -->
           </div>
         </main>
       </section>
+
+
       <footer class="home-footer">
         <div class="home-content5">
           <main class="home-main-content">
