@@ -618,6 +618,8 @@
 .home-image03 {
   object-fit: cover;
   border-radius: 6px;
+  height: 680px;
+  width: 402px;
 }
 
 .home-content1 {
@@ -689,6 +691,8 @@
 .home-image05 {
   object-fit: cover;
   border-radius: 6px;
+  height: 680px;
+  width: 402px;
 }
 
 .home-content2 {
