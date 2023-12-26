@@ -45,17 +45,17 @@
 </head>
 
 <body>
+  <canvas id="test"></canvas>
   <link rel="stylesheet" href="./style.css" />
   <div>
     <link href="./index.css" rel="stylesheet" />
     <div class="home-container">
+      <!-- <canvas id="test"></canvas> -->
+
       <section class="home-section">
         <nav class="navbar-navbar navbar-root-class-name">
           <div>
-            <a href="./index.html"><span
-                style="font-family: 'Encode Sans SC', sans-serif;
-            font-family: 'Major Mono Display', monospace; color:white; font-weight: 700; font-style: bold; font-size: 50px;">
-                Minsky </span></a>
+            <a href="./index.html" class="logo">Minsky</a>
           </div>
           <!-- <img alt="Planical7012" src="public/Branding/Logo nobg.png" class="navbar-branding-logo" /> -->
           <div class="navbar-nav-content">
@@ -66,10 +66,10 @@
                 </span>
               </span>
               <span class="nav-link">
-                <a href="#models">Models</a>
+                <a href="#why-us">Why Us</a>
               </span>
               <span class="nav-link">
-                <a href="#why-us">Why Us</a>
+                <a href="#pricing">Pricing</a>
               </span>
               <span class="nav-link">
                 <a href="#contact-us">Contact</a>
@@ -94,14 +94,14 @@
               </div>
             </div>
             <div class="navbar-nav-links1">
-              <span>
+              <span class="nav-link">
                 <a href="#services">Services</a>
               </span>
               <span class="nav-link">
-                <a href="#models">Models</a>
+                <a href="#why-us">Why Us</a>
               </span>
               <span class="nav-link">
-                <a href="#why-us">Why Us</a>
+                <a href="#pricing">Pricing</a>
               </span>
               <span class="nav-link">
                 <a href="#contact-us">Contact</a>
@@ -119,17 +119,21 @@
           <div class="home-content">
             <main class="home-main">
               <header class="home-header">
-                <h1 class="home-heading"> Deploy the models <span id="rotating-text"></span>
+                <h1 class="home-heading">
+                  Get enabled with<br>
+                  <span class="rotating-text-container">
+                    <span id="rotating-text"></span>
+                  </span>
                 </h1>
-                <span class="home-caption"> Fast-Track Your LLM Service as we empower you with Lightning-Fast
-                  Customization </span>
+                <span class="home-caption"> Connect and Thrive - Conversational AI for Every Interaction. </span>
               </header>
+
               <div class="home-buttons">
                 <div class="home-get-started button">
-                  <a href="https://playground.minsky.app"><span class="home-text">Try Playground</span></a>
+                  <a href="https://playground.minsky.app"><span class="button-text">Try Playground</span></a>
                 </div>
                 <div class="home-get-started1 button">
-                  <a href="https://tally.so/r/mZOz6B"><span class="home-text01">Contact Us</span></a>
+                  <a href="https://api.minsky.app/docs/redoc/"><span class="home-text01">Docs</span></a>
                 </div>
               </div>
             </main>
@@ -137,240 +141,126 @@
         </div>
       </section>
 
+      <!-- Multilingual Audio Demo -->
 
       <section class="home-section1">
-        <header class="merged-header">
-          <header class="merged-left">
+        <div class="merged-header">
+          <div class="merged-left">
             <h2 class="home-heading">
               <span>The Future of AI is </span>
               <br />
-              <span style="color: #80FF44;">High-Context</span>
+              <span class="gradient-text">Multilinguality</span>
             </h2>
-          </header>
+          </div>
           <div class="merged-right">
             <p class="merged-paragraph home-text10">
-              In the age of information, depth matters. Minsky is not just another LLM
-              provider; we're the pioneers of high-context AI. With models boasting a context range from <span
-                style="color: #80FF44;">2K to 128K
-                tokens</span>, we're pushing the boundaries of what's possible. But what does this mean for you?
+              Break barriers, bridge cultures. Minsky is fluent in all major<br>
+              <span class="gradient-text">Indian languages</span> , empowering conversations across boundaries.
             </p>
           </div>
-        </header>
-        <main class="merged-cards">
-          <section class="merged-card merged-root-class-name">
-            <div class="merged-icon">
-              <img alt="image" src="/public/Icons/money.png" class="merged-icon1" />
-            </div>
-            <main class="merged-content">
-              <h1 class="merged-header-text"><span>Operational Efficiency</span></h1>
-              <p class="merged-card-desc">
-                <span>
-                  Automate complex tasks, reduce manual interventions, and streamline
-                  operations. Achieve faster results with fewer resources.
-                </span>
-              </p>
-            </main>
-          </section>
-          <section class="merged-card merged-root-class-name1">
-            <div class="merged-icon">
-              <img alt="image" src="/public/Icons/speedometer.png" class="merged-icon1" />
-            </div>
-            <main class="merged-content">
-              <h1 class="merged-header-text"><span>ROI Boost</span></h1>
-              <p class="merged-card-desc">
-                <span>
-                  Use high-context models for deeper content understanding and better precision resulting in enhanced
-                  customer interactions, reduced errors, and increased conversions.
-                </span>
-              </p>
-            </main>
-          </section>
-          <section class="merged-card merged-root-class-name2">
-            <div class="merged-icon">
-              <img alt="image" src="/public/Icons/best-customer-experience.png" class="merged-icon1" />
-            </div>
-            <main class="merged-content">
-              <h1 class="merged-header-text"><span>Enhanced User Experience</span></h1>
-              <p class="merged-card-desc">
-                <span>
-                  Deliver answers that don't just satisfy, but inspire, leading to
-                  higher user retention and engagement. <br><br>
-                </span>
-              </p>
-            </main>
-          </section>
-        </main>
+        </div>
+
+        <!-- Waveform Video -->
+        <div class="waveform-video-container">
+          <video class="waveform-video" autoplay loop muted playsinline>
+            <source src="/public/SectionImages/Minsky Audio Demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <button class="video-control">Unmute</button>
+        </div>
+
       </section>
 
+      <!-- Our Services -->
+
       <section id="services" class="home-section1">
-        <h2 class="home-text02">Services We Offer</h2>
-        <div class="home-features">
-          <header class="feature feature-active home-feature" data-service="prompt">
-            <h3 class="home-text03">Prompt-Based Endpoints</h3>
-            <!-- <p class="home-text04">Doloremque laudantium</p> -->
-          </header>
-          <header class="feature home-feature1" data-service="inference">
-            <h3 class="home-text05">Inference Endpoints</h3>
-            <!-- <p class="home-text06">Doloremque laudantium</p> -->
-          </header>
-          <header class="feature home-feature2" data-service="custom">
-            <h3 class="home-text07">Custom Model Deployment</h3>
-            <!--  <p class="home-text08">Doloremque laudantium</p> -->
-          </header>
-        </div>
-        <div class="note-container" data-service-container="prompt">
-          <div class="note-note">
-            <div class="note-content" data-service-content="prompt">
-              <main class="note-main">
-                <h2 class="note-heading">
-                  <span>Prompt-Based Endpoints</span>
-                </h2>
-                <p class="note-paragraph">
-                  <span> Experience the effortless connection to AI with our Prompt-Based Endpoints. These personalized
-                    tasks are designed to simplify and streamline specific functions, making AI integration a breeze.
-                    Connect your applications, and let the AI work be done for you, effortlessly. </span>
-                  <br />
-                  <br />
-                  <span> Say goodbye to the complexities of AI development and let us handle the heavy lifting. </span>
-                  <br />
-                </p>
-              </main>
-            </div>
-            <div class="note-image">
-              <img alt="image" src="public/SectionImages/pexels-suzy-hazelwood-3601081.jpg" class="note-image1" />
-            </div>
+        <div class="merged-header">
+          <div class="merged-left">
+            <h2 class="home-heading">Our Services</h2>
+          </div>
+          <div class="merged-right">
+            <p class="merged-paragraph home-text10">
+              Unlock the full potential of AI in your applications. Our services are designed
+              to seamlessly integrate into your business with <span class="gradient-text">our easy to use API's</span>,
+              enhancing interactions and productivity.
+            </p>
           </div>
         </div>
-        <div class="note-container" data-service-container="inference">
-          <div class="note-note">
-            <div class="note-content" data-service-content="inference">
-              <main class="note-main">
-                <h2 class="note-heading">
-                  <span>Inference Endpoints</span>
-                </h2>
-                <p class="note-paragraph">
-                  <span> With our Inference Endpoints, you can forget about managing AI infrastructure. We take care of
-                    it for you, ensuring lightning-fast and accurate results. You don't need to worry about the
-                    technical complexities; we've got you covered. </span>
-                  <br />
-                  <br />
-                  <span> Focus on your goals while we manage the AI backend. </span>
-                  <br />
-                </p>
-              </main>
-            </div>
-            <div class="note-image">
-              <img alt="image" src="public/SectionImages/pexels-pixabay-262488.jpg" class="note-image1" />
-            </div>
-          </div>
-        </div>
-        <div class="note-container" data-service-container="custom">
-          <div class="note-note">
-            <div class="note-content" data-service-content="custom">
-              <main class="note-main">
-                <h2 class="note-heading">
-                  <span>Custom Models</span>
-                </h2>
-                <p class="note-paragraph">
-                  <span> Bring your own model, and we'll take care of the rest. Our service provides hosting,
-                    fine-tuning, and optimization for your custom models. You can efficiently solve problems and achieve
-                    remarkable results. Let us simplify AI for you, so you can focus on what matters most. </span>
-                  <br />
-                  <br />
-                  <span> Contact us today to bring your idea to reality. </span>
-                  <br />
-                </p>
-              </main>
-            </div>
-            <div class="note-image">
-              <img alt="image" src="public/SectionImages/pexels-pavel-danilyuk-7654396.jpg" class="note-image1" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="home-section2">
-        <header class="home-header01">
-          <h2 class="home-text09"> What Does Endpoint as a Service Unlocks? </h2>
-          <span class="home-text10"> Endpoint as a Service (EaaS) revolutionizes AI interaction by offering a
-            plug-and-play experience for both developers and users. With EaaS, you can access two powerful components:
-            Prompt-Based Endpoints and Inference Endpoints, seamlessly integrated to simplify your AI journey. </span>
-        </header>
+
+        <!-- Our Services: T2T -->
+
         <section class="home-note">
           <div class="home-image02">
-            <img alt="image" src="public/SectionImages/pexels-max-fischer-5212697.jpg" class="feature-image" />
+            <!-- <img alt="image" src="public/SectionImages/pexels-max-fischer-5212697.jpg" class="feature-image" /> -->
+            <video class="feature-image" autoplay loop muted playsinline>
+              <source src="/public/PexelsImgs/chat_animation.webm" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div class="home-content1">
             <div class="home-main1">
               <div class="home-caption1">
-                <span class="section-head">Prompt-Based Endpoint&nbsp;</span>
+                <span class="section-head">Text To Text&nbsp;</span>
               </div>
               <div class="home-heading01">
-                <h2 class="section-heading">AI for the People</h2>
-                <p class="section-description"> Our specialized prompts act as ready-made tools, effortlessly performing
+                <h2 class="section-heading">Large Language Models</h2>
+                <!-- <p class="section-description"> Our specialized prompts act as ready-made tools, effortlessly performing
                   specialized tasks. Whether you're a developer aiming to save time or a user seeking intuitive
-                  interactions, our prompts are designed for seamless performance. </p>
+                  interactions, our prompts are designed for seamless performance. </p> -->
                 <ul class="home-checkmarks">
                   <li>
                     <div class="mark-icon">
                       <svg viewBox="0 0 1024 1024" class="mark-icon1">
                         <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                       </svg>
-                    </div> Scripting the Next Viral Sensation: Craft YouTube scripts that captivate.
+                    </div>
+                    <div class="list-text">Scripting the Next Viral Sensation: Craft YouTube scripts that captivate.
+                    </div>
                   </li>
                   <li>
                     <div class="mark-icon">
                       <svg viewBox="0 0 1024 1024" class="mark-icon1">
                         <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                       </svg>
-                    </div> Social Media Mastery: Design Instagram posts that resonate with your audience.
+                    </div>
+                    <div class="list-text">Marketing Mastery: Generate engaging product descriptions and
+                      advertising copy that resonate with your audience.</div>
                   </li>
                   <li>
                     <div class="mark-icon">
                       <svg viewBox="0 0 1024 1024" class="mark-icon1">
                         <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                       </svg>
-                    </div> Blogging with Depth: Create content that doesn't just inform, but captivates.
-                  </li>
-                  <li>
-                    <div class="mark-icon">
-                      <svg viewBox="0 0 1024 1024" class="mark-icon1">
-                        <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
-                      </svg>
-                    </div> Ad Creation: Generate ads that feel personal, not automated.
-                  </li>
-                  <li>
-                    <div class="mark-icon">
-                      <svg viewBox="0 0 1024 1024" class="mark-icon1">
-                        <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
-                      </svg>
-                    </div> Email Automation: Send out emails that feel human, powered by AI.
+                    </div>
+                    <div class="list-text">Summary Wizard: Condense lengthy documents, books and reports with
+                      ease.</div>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="home-get-started2 button">
-              <span class="home-text11">Get started</span>
+              <span class="button-text">Try Now</span>
             </div>
           </div>
         </section>
+
+        <!-- Our Services: T2S -->
+
         <section class="home-note1">
           <div class="home-image04">
             <img alt="image" src="public/SectionImages/pexels-andrea-piacquadio-3758105.jpg" class="feature-image" />
           </div>
           <div class="home-content2">
             <main class="home-main2">
-              <header class="home-caption2">
-                <span class="home-section4 section-head">
-                  <span>Inference Endpoints</span>
-                  <br />
-                </span>
-              </header>
+              <div class="home-caption1">
+                <span class="section-head">Text To Voice&nbsp;</span>
+              </div>
               <main class="home-heading03">
                 <header class="home-header02">
-                  <h2 class="section-heading"> For Visionaries & Innovators: </h2>
-                  <p class="section-description"> Operating discreetly, our Inference Endpoints process intricate AI
+                  <h2 class="section-heading"> AI Voices: </h2>
+                  <!-- <p class="section-description"> Operating discreetly, our Inference Endpoints process intricate AI
                     models, making them readily accessible for integration into applications. The result?
-                    Lightning-fast, precise outcomes that benefit both developers and end-users. </p>
+                    Lightning-fast, precise outcomes that benefit both developers and end-users. </p> -->
                 </header>
                 <ul class="home-checkmarks">
                   <li>
@@ -378,45 +268,37 @@
                       <svg viewBox="0 0 1024 1024" class="mark-icon1">
                         <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                       </svg>
-                    </div> E-Commerce Personalization: Offer shopping experiences that feel tailored to each user.
+                    </div>
+                    <div class="list-text">Storyteller: Turn any text into engaging audio narratives.</div>
                   </li>
                   <li>
                     <div class="mark-icon">
                       <svg viewBox="0 0 1024 1024" class="mark-icon1">
                         <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                       </svg>
-                    </div> Book Summarization: Capture the essence of books in concise summaries.
+                    </div>
+                    <div class="list-text">Virtual Assistant: Interactive voice responses for customer support.</div>
                   </li>
                   <li>
                     <div class="mark-icon">
                       <svg viewBox="0 0 1024 1024" class="mark-icon1">
                         <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                       </svg>
-                    </div> Adaptive Content: Deliver content that vibes with user preferences.
-                  </li>
-                  <li>
-                    <div class="mark-icon">
-                      <svg viewBox="0 0 1024 1024" class="mark-icon1">
-                        <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
-                      </svg>
-                    </div> Real-Time Translations: Break language barriers in an instant.
-                  </li>
-                  <li>
-                    <div class="mark-icon">
-                      <svg viewBox="0 0 1024 1024" class="mark-icon1">
-                        <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
-                      </svg>
-                    </div> Self-Moderating Content: Ensure your platform's content stays within guidelines
-                    automatically.
+                    </div>
+                    <div class="list-text">Global Voices: Wide range of accents and languages for global reach
+                      supporting over 12+ Indian Languages.</div>
                   </li>
                 </ul>
               </main>
             </main>
             <div class="home-get-started3 button">
-              <span class="home-text14">Get started</span>
+              <span class="button-text">Try Now</span>
             </div>
           </div>
         </section>
+
+        <!-- Our Services: S2T -->
+
         <section class="home-note">
           <div class="home-image02">
             <img alt="image" src="public/SectionImages/pexels-cottonbro-studio-4065158.jpg" class="feature-image" />
@@ -424,273 +306,250 @@
           <div class="home-content1">
             <div class="home-main1">
               <div class="home-caption1">
-                <span class="section-head">Custom Models and Fine-Tuning&nbsp;</span>
+                <span class="section-head">Voice to Text&nbsp;</span>
               </div>
               <div class="home-heading01">
-                <h2 class="section-heading">For the Trailblazers:</h2>
-                <p class="section-description"> Our custom models are not just about AI; they're about crafting AI that
+                <h2 class="section-heading">AI Speech Recognition: </h2>
+                <!-- <p class="section-description"> Our custom models are not just about AI; they're about crafting AI that
                   speaks your industry's language. With the power of generative tasks and fine-tuning, we tailor our
-                  models to resonate with specific industry nuances and challenges. </p>
+                  models to resonate with specific industry nuances and challenges. </p> -->
                 <ul class="home-checkmarks">
                   <li>
                     <div class="mark-icon">
                       <svg viewBox="0 0 1024 1024" class="mark-icon1">
                         <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                       </svg>
-                    </div> Healthcare: Generate patient scripts and automate medical documentation with models attuned
-                    to medical terminologies.
+                    </div>
+                    <div class="list-text">Voice Scribe: Accurately transcribes speeches, lectures, and meetings.</div>
                   </li>
                   <li>
                     <div class="mark-icon">
                       <svg viewBox="0 0 1024 1024" class="mark-icon1">
                         <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                       </svg>
-                    </div> E-Commerce: Craft product descriptions and personalized email campaigns, fine-tuned for
-                    consumer engagement.
+                    </div>
+                    <div class="list-text">Subtitle Alchemist: Real-time subtitles for videos and presentations.</div>
                   </li>
                   <li>
                     <div class="mark-icon">
                       <svg viewBox="0 0 1024 1024" class="mark-icon1">
                         <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                       </svg>
-                    </div> Finance: Produce automated financial reports, ensuring accuracy with models fine-tuned for
-                    financial jargon.
-                  </li>
-                  <li>
-                    <div class="mark-icon">
-                      <svg viewBox="0 0 1024 1024" class="mark-icon1">
-                        <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
-                      </svg>
-                    </div> Media: Generate summaries and press releases, with models attuned to media genres.
-                  </li>
-                  <li>
-                    <div class="mark-icon">
-                      <svg viewBox="0 0 1024 1024" class="mark-icon1">
-                        <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
-                      </svg>
-                    </div> Legal: Automate legal drafts and contracts, with models fine-tuned for legal intricacies.
+                    </div>
+                    <div class="list-text">Multilingual Interpreter: Understands and transcribes various languages and
+                      dialects including 25+ Indian Languages.</div>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="home-get-started2 button">
-              <span class="home-text11">Get started</span>
+              <span class="button-text">Try Now</span>
             </div>
           </div>
         </section>
       </section>
-      <section id="models" class="home-section5">
-        <header class="home-header03">
-          <header class="home-left">
-            <h2 class="section-heading">Some Supported Models</h2>
-          </header>
-          <div class="home-right"></div>
-        </header>
-        <div id="container">
-          <div id="slider-container">
-            <span onclick="slideRight()" class="btn"></span>
-            <div id="slider">
-              <div class="slide">
-                <span>
-                  <main class="card-content card-card">
-                    <h1 class="card-header">
-                      <span>CodeLlama</span>
-                    </h1>
-                    <p class="card-description">
-                      <span>CodeLlama 7B - 34B Models</span>
-                    </p>
-                  </main>
-                </span>
-              </div>
-              <div class="slide">
-                <span>
-                  <main class="card-content card-card">
-                    <h1 class="card-header">
-                      <span>Llama 2</span>
-                    </h1>
-                    <p class="card-description">
-                      <span>Llama 2 7B - 70B Models</span>
-                    </p>
-                  </main>
-                </span>
-              </div>
-              <div class="slide">
-                <span>
-                  <main class="card-content card-card">
-                    <h1 class="card-header">
-                      <span>Mistral</span>
-                    </h1>
-                    <p class="card-description">
-                      <span>Mistral 7B Models</span>
-                    </p>
-                  </main>
-                </span>
-              </div>
-              <div class="slide">
-                <span>
-                  <main class="card-content card-card">
-                    <h1 class="card-header">
-                      <span>RedPajama</span>
-                    </h1>
-                    <p class="card-description">
-                      <span>Red Pajama 7B Model</span>
-                    </p>
-                  </main>
-                </span>
-              </div>
-              <div class="slide">
-                <span>
-                  <main class="card-content card-card">
-                    <h1 class="card-header">
-                      <span>Falcon</span>
-                    </h1>
-                    <p class="card-description">
-                      <span>Falcon 16B Model/span>
-                    </p>
-                  </main>
-                </span>
-              </div>
-              <div class="slide">
-                <span>
-                  <main class="card-content card-card">
-                    <h1 class="card-header">
-                      <span>Dolly v2</span>
-                    </h1>
-                    <p class="card-description">
-                      <span>Dolly v2 3B Model</span>
-                    </p>
-                  </main>
-                </span>
-              </div>
-            </div>
-            <span onclick="slideLeft()" class="btn"></span>
-          </div>
-        </div>
-      </section>
-      <!-- <section id="models" class="home-section5"><header class="home-header03"><header class="home-left"><h2 class="section-heading">Custom Models</h2></header><div class="home-right"></div></header><div id="slider-container"><span onclick="slideRight()" class="btn"></span><main id="slider" class="home-cards"><section class="card-card card-root-class-name slide"><div class="card-icon"><img alt="image" src="public/Icons/group%201316-200w.png" class="card-icon1" /></div><main class="card-content"><h1 class="card-header"><span>CodeLlama</span></h1><p class="card-description"><span>CodeLlama 7B - 34B Models</span></p></main></section><section class="card-card card-root-class-name1 slide"><div class="card-icon"><img alt="image" src="public/Icons/group%201314-200h.png" class="card-icon1" /></div><main class="card-content"><h1 class="card-header"><span>Llama 2</span></h1><p class="card-description"><span>Llama 2 7B- 70B Models</span></p></main></section><section class="card-card card-root-class-name2 slide"><div class="card-icon"><img alt="image" src="public/Icons/group%201317-200h.png" class="card-icon1" /></div><main class="card-content"><h1 class="card-header"><span>Mistral</span></h1><p class="card-description"><span>Mistral 7B Model<br><br></span></p></main></section><section class="card-card card-root-class-name2 slide"><div class="card-icon"><img alt="image" src="public/Icons/group%201317-200h.png" class="card-icon1" /></div><main class="card-content"><h1 class="card-header"><span>Red Pajamas</span></h1><p class="card-description"><span>Red Pajamas Model<br><br></span></p></main></section><section class="card-card card-root-class-name2 slide"><div class="card-icon"><img alt="image" src="public/Icons/group%201317-200h.png" class="card-icon1" /></div><main class="card-content"><h1 class="card-header"><span>GPT2</span></h1><p class="card-description"><span>GPT2 Model<br><br></span></p></main></section><section class="card-card card-root-class-name2 slide"><div class="card-icon"><img alt="image" src="public/Icons/group%201317-200h.png" class="card-icon1" /></div><main class="card-content"><h1 class="card-header"><span>And</span></h1><p class="card-description"><span>Many More Models!<br><br></span></p></main></section></main><span onclick="slideLeft()" class="btn"></span></div></section> -->
-      <section id="why-us" class="home-section6">
-        <div class="home-container1">
-          <div class="home-caption3">
-            <h2 class="home-heading06 section-heading">
-              <span>About Us</span>
+
+      <!-- Why Choose -->
+
+      <section id="why-us" class="home-section1">
+        <header class="merged-header">
+          <header class="merged-left">
+            <h2 class="home-heading">
+              <span>Why Choose </span>
               <br />
+              <span class="gradient-text">Minsky</span>
             </h2>
-            <p class="home-paragraph2 section-description"> We are passionate about revolutionizing the way you interact
-              with LLMs and endpoints. Our mission is to simplify complex technology, making it accessible and
-              beneficial for everyone. We are committed to delivering cutting-edge solutions that enhance your
-              productivity and creativity. </p>
+          </header>
+          <div class="merged-right">
+            <p class="merged-paragraph home-text10">
+              Experience swift AI processing, extensive language versatility, and exceptional affordability, all in one
+              advanced solution.<br>
+              <!-- <span style="color: #80FF44;">Indian languages</span> , empowering conversations across boundaries. -->
+            </p>
           </div>
-          <div class="home-note2">
-            <div class="home-image06">
-              <div class="home-content3">
-                <div class="home-heading08">
-                  <div class="home-header04">
-                    <h2 class="section-heading">We Are Unique</h2>
-                  </div>
-                  <div class="accordion-accordion accordion-root-class-name">
-                    <div data-role="accordion-container" class="accordion-element">
-                      <div class="accordion-details">
-                        <span class="accordion-text">
-                          <span>Customization</span>
-                        </span>
-                        <span data-role="accordion-content" class="accordion-text1" style="display: none;">
-                          <span> Our tailored prompts and endpoints empower you to create unique experiences. whether
-                            you're a casual user or a developer, our platform accomodates all. </span>
-                        </span>
-                      </div>
-                      <svg viewBox="0 0 1024 1024" data-role="accordion-icon" class="accordion-icon"
-                        style="transform: rotate(0deg);">
-                        <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
-                      </svg>
-                    </div>
-                    <div data-role="accordion-container" class="accordion-element1 accordion-element">
-                      <div class="accordion-details1">
-                        <span class="accordion-text2">
-                          <span>Model Variety</span>
-                        </span>
-                        <span data-role="accordion-content" class="accordion-text3" style="display: none;">
-                          <span> With an array of hosted models, you'll find the perfect fit for your project and custom
-                            needs. </span>
-                        </span>
-                      </div>
-                      <svg viewBox="0 0 1024 1024" data-role="accordion-icon" class="accordion-icon2"
-                        style="transform: rotate(0deg);">
-                        <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
-                      </svg>
-                    </div>
-                    <div data-role="accordion-container" class="accordion-element2 accordion-element">
-                      <div class="accordion-details2">
-                        <span class="accordion-text4">
-                          <span>Testing Environment</span>
-                        </span>
-                        <span data-role="accordion-content" class="accordion-text5" style="display: none;">
-                          <span> Our playgrounds provide a safe space for experimentation and learning. </span>
-                        </span>
-                      </div>
-                      <svg viewBox="0 0 1024 1024" data-role="accordion-icon" class="accordion-icon4"
-                        style="transform: rotate(0deg);">
-                        <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        </header>
+        <main class="merged-cards">
+          <section class="merged-card merged-root-class-name">
+            <div class="merged-icon">
+              <img alt="image" src="/public/Icons/fast.gif" class="merged-icon1" />
             </div>
-            <div class="home-content3">
-              <div class="home-heading07">
-                <div class="home-header04">
-                  <h2 class="section-heading">Why Choose Us</h2>
-                </div>
-                <div class="accordion-accordion accordion-root-class-name">
-                  <div data-role="accordion-container" class="accordion-element">
-                    <div class="accordion-details">
-                      <span class="accordion-text">
-                        <span>Expertise</span>
-                      </span>
-                      <span data-role="accordion-content" class="accordion-text1">
-                        <span> Our team consists of seasoned professionals who excel in the field of AI and machine
-                          learning. You can trust us to provide you with the latest advancements and personalized
-                          services. </span>
-                      </span>
-                    </div>
-                    <svg viewBox="0 0 1024 1024" data-role="accordion-icon" class="accordion-icon">
-                      <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
-                    </svg>
-                  </div>
-                  <div data-role="accordion-container" class="accordion-element1 accordion-element">
-                    <div class="accordion-details1">
-                      <span class="accordion-text2">
-                        <span>Innovation</span>
-                      </span>
-                      <span data-role="accordion-content" class="accordion-text3">
-                        <span> Minsky is at the forefront of innovation, constantly exploring new possibilities and
-                          pushing the boundaries of what LLMs and endpoints can achieve. </span>
-                      </span>
-                    </div>
-                    <svg viewBox="0 0 1024 1024" data-role="accordion-icon" class="accordion-icon2">
-                      <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
-                    </svg>
-                  </div>
-                  <div data-role="accordion-container" class="accordion-element2 accordion-element">
-                    <div class="accordion-details2">
-                      <span class="accordion-text4">
-                        <span>User-Centric</span>
-                      </span>
-                      <span data-role="accordion-content" class="accordion-text5">
-                        <span> We prioritize your needs and preferences. Our user-centric approach ensures that our
-                          services cater to your unique requirements. </span>
-                      </span>
-                    </div>
-                    <svg viewBox="0 0 1024 1024" data-role="accordion-icon" class="accordion-icon4">
-                      <path d="M366 708l196-196-196-196 60-60 256 256-256 256z"></path>
-                    </svg>
-                  </div>
-                </div>
+            <main class="merged-content">
+              <h1 class="merged-header-text"><span>3 X Faster Inferences</span></h1>
+              <!-- <p class="merged-card-desc">
+                <span>
+                  Automate complex tasks, reduce manual interventions, and streamline
+                  operations. Achieve faster results with fewer resources.
+                </span>
+              </p> -->
+            </main>
+          </section>
+          <section class="merged-card merged-root-class-name1">
+            <div class="merged-icon">
+              <img alt="image" src="/public/Icons/global.gif" class="merged-icon1" />
+            </div>
+            <main class="merged-content">
+              <h1 class="merged-header-text"><span>40 + Languages </span></h1>
+              <!-- <p class="merged-card-desc">
+                <span>
+                  Use high-context models for deeper content understanding and better precision resulting in enhanced
+                  customer interactions, reduced errors, and increased conversions.
+                </span>
+              </p> -->
+            </main>
+          </section>
+          <section class="merged-card merged-root-class-name2">
+            <div class="merged-icon">
+              <img alt="image" src="/public/Icons/affordable anim.gif" class="merged-icon1" />
+            </div>
+            <main class="merged-content">
+              <h1 class="merged-header-text"><span>1/2 Price of GPT 3.5</span></h1>
+              <p class="merged-card-desc">
+                <!-- <span>
+                  Deliver answers that don't just satisfy, but inspire, leading to
+                  higher user retention and engagement. <br><br>
+                </span> -->
+              </p>
+            </main>
+          </section>
+        </main>
+      </section>
+
+      <!-- Pricing -->
+
+      <section id="pricing" class="home-section1">
+        <div class="merged-header">
+          <div class="merged-left">
+            <h2 class="home-heading">Pricing</h2>
+          </div>
+        </div>
+
+        <div class="home-features">
+          <div class="feature feature-active home-feature" data-service="prompt">
+            <h3 class="home-text03">Text To Text </h3>
+            <!-- <p class="home-text04">Doloremque laudantium</p> -->
+          </div>
+          <div class="feature home-feature1" data-service="inference">
+            <h3 class="home-text03">Text To Speech</h3>
+            <!-- <p class="home-text06">Doloremque laudantium</p> -->
+          </div>
+          <div class="feature home-feature2" data-service="custom">
+            <h3 class="home-text03">Speech To Text</h3>
+            <!--  <p class="home-text08">Doloremque laudantium</p> -->
+          </div>
+        </div>
+
+        <div class="note-container" data-service-container="prompt">
+          <div class="note-note">
+            <div class="note-content" data-service-content="prompt">
+              <!-- Inserted table starts here -->
+              <div class="table-container">
+                <table class="pricing-table">
+                  <thead>
+                    <tr>
+                      <th colspan="2">LLAMA MODELS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>7B</td>
+                      <td><span class="table-price-data">$0.2 / 1M Tokens</span></td>
+                    </tr>
+                    <tr>
+                      <td>13B</td>
+                      <td><span class="table-price-data">$0.225 / 1M Tokens</span></td>
+                    </tr>
+                    <tr>
+                      <td>70B</td>
+                      <td><span class="table-price-data">$0.9 / 1M Tokens</span></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
+              <hr>
+              <div class="table-container">
+                <table class="pricing-table">
+                  <thead>
+                    <tr>
+                      <th colspan="2">MINSTREX MODELS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>7B</td>
+                      <td><span class="table-price-data">$0.2 / 1M Tokens</span></td>
+                    </tr>
+                    <tr>
+                      <td>8 X 7B </td>
+                      <td><span class="table-price-data">$0.225 / 1M Tokens</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- Inserted table ends here -->
             </div>
           </div>
         </div>
+
+
+
+        <div class="note-container" data-service-container="inference">
+          <div class="note-note">
+            <div class="note-content" data-service-content="inference">
+              <div class="table-container">
+                <table class="pricing-table">
+                  <thead>
+                    <tr>
+                      <th colspan="2">Multilingual Models</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Voice HQ</td>
+                      <td><span class="table-price-data">$0.2 / 1K Characters</span></td>
+                    </tr>
+                    <tr>
+                      <td>Voice FS</td>
+                      <td><span class="table-price-data">$0.225 / 1K Characters</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="note-container" data-service-container="custom">
+          <div class="note-note">
+            <div class="note-content" data-service-content="custom">
+              <div class="table-container">
+                <table class="pricing-table">
+                  <thead>
+                    <tr>
+                      <th colspan="2">Multilingual Models</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>ASR HQ</td>
+                      <td><span class="table-price-data">$0.2 / minute</span></td>
+                    </tr>
+                    <tr>
+                      <td>ASR FS</td>
+                      <td><span class="table-price-data">$0.225 / minute</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+
       </section>
+
+      <!-- Contact Us -->
 
       <section id="contact-us" class="home-section7">
         <div class="home-cube">
@@ -700,14 +559,14 @@
         </div>
         <main class="home-banner">
           <div class="home-header06" id="banner-content">
-            <h2 class="section-heading">Get Your Custom Endpoints Today</h2>
+            <h2 class="contact-heading">Sign Up For Your Free Trial Today</h2>
             <p class="home-description section-description">
               <!-- Lorem ipsum dolor sit amet! -->
             </p>
           </div>
           <div class="home-buttons1">
             <div class="home-get-started4 button">
-              <a href="https://tally.so/r/mZOz6B"><span class="home-text17">Get started</span></a>
+              <a href="https://tally.so/r/mZOz6B"><span class="button-text">Get started</span></a>
             </div>
 
             <!-- <div class="home-book-demo button"><span class="home-text18">Book a demo</span></div> -->
@@ -715,6 +574,7 @@
         </main>
       </section>
 
+      <!-- Footer -->
 
       <footer class="home-footer">
         <div class="home-content5">
@@ -756,8 +616,11 @@
                   </div>
                   <div class="home-links1">
                     <span class="footer-link"><a href="https://neurobridge.tech/about" target="_blank">About</a></span>
-                    <span class="footer-link"><a href="https://neurobridge.tech/about" target="_blank">Blogs</a></span>
-                    <span class="footer-link">News</span>
+                    <span class="footer-link"><a href="https://neurobridge.tech/privacy"
+                        target="_blank">Privacy</a></span>
+                    <span class="footer-link"><a href="https://neurobridge.tech/tos" target="_blank">Terms</a></span>
+
+                    <!-- <span class="footer-link">News</span> -->
                   </div>
                 </div>
               </header>

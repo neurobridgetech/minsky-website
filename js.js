@@ -56,30 +56,6 @@ runAccordionCodeEmbed();
 listenForUrlChangesAccordion();
 
 
-/*
-Here's what the above is doing:
-    1. Selects all accordion containers, contents, and icons
-    2. Hides all accordion contents
-    3. Adds an event listener to each accordion container
-    4. When an accordion container is clicked, it:
-        - Hides all accordion contents
-        - Resets all icon transforms to 0deg (default)
-        - Checks if this container has class 'accordion-open'
-            - If it does, it removes class 'accordion-open'
-            - If it doesn't, it:
-                - Removes class 'accordion-open' from all containers
-                - Adds class 'accordion-open' to this container
-                - Shows accordion content
-                - Rotates accordion icon 180deg
-*/
-
-/*
-         Mobile menu - Code Embed
-         */
-
-/* listenForUrlChangesMobileMenu() makes sure that if you changes pages inside your app,
-the mobile menu will still work*/
-
 const listenForUrlChangesMobileMenu = () => {
     let url = location.href;
     document.body.addEventListener('click', () => {
@@ -129,87 +105,36 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// Get references to service headings and content container
-/* const serviceHeadings = document.querySelectorAll('[data-service]');
-const serviceContent = document.getElementById('data-service-content');
-
-// Add a click event listener to each service heading
-serviceHeadings.forEach((heading) => {
-  heading.addEventListener('click', (event) => {
-    const selectedService = event.target.getAttribute('data-service');
-    // Find the corresponding service content based on the selected service
-    const contentToDisplay = document.querySelector(`[data-service-content="${selectedService}"]`);
-
-    // Hide all service content
-    serviceContent.querySelectorAll('[data-service-content]').forEach((content) => {
-      content.style.display = 'none';
-    });
-
-    // Show the selected service's content
-    contentToDisplay.style.display = 'block';
-  });
-});
- */
-
-/* document.addEventListener('DOMContentLoaded', function () {
-    const serviceHeadings = document.querySelectorAll('[data-service]');
-    const serviceContent = document.querySelectorAll('[data-service-content]');
-
-    // Add a click event listener to each service heading
-    serviceHeadings.forEach((heading) => {
-        heading.addEventListener('click', (event) => {
-            const selectedService = event.currentTarget.getAttribute('data-service');
-
-            // Hide all service content
-            serviceContent.forEach((content) => {
-                content.style.display = 'none';
-            });
-
-            // Show the selected service's content
-            const contentToDisplay = document.querySelector(`[data-service-content="${selectedService}"]`);
-            if (contentToDisplay) {
-                contentToDisplay.style.display = 'block';
-            }
-        });
-    });
-}); */
-
 document.addEventListener('DOMContentLoaded', function () {
     const serviceHeadings = document.querySelectorAll('[data-service]');
     const serviceContainers = document.querySelectorAll('[data-service-container]');
 
-    // Add a click event listener to each service heading
     serviceHeadings.forEach((heading) => {
         heading.addEventListener('click', (event) => {
             const selectedService = event.currentTarget.getAttribute('data-service');
-
-            // Remove active state from all headings
-            serviceHeadings.forEach((head) => {
-                head.classList.remove('feature-active');
-            });
-
-            // Add active state to the clicked heading
+            serviceHeadings.forEach(head => head.classList.remove('feature-active'));
             event.currentTarget.classList.add('feature-active');
 
-            // Hide all service containers
             serviceContainers.forEach((container) => {
                 container.style.display = 'none';
             });
 
-            // Show the selected service's container
             const containerToDisplay = document.querySelector(`[data-service-container="${selectedService}"]`);
             if (containerToDisplay) {
-                containerToDisplay.style.display = 'flex'; // Use 'flex' to maintain the flexbox layout
+                containerToDisplay.style.display = 'contents'; // Adjusted to flex
+                containerToDisplay.style.flexDirection = 'column'; // Ensure vertical layout
 
-                // Ensure the content inside the container is also displayed
                 const contentToDisplay = containerToDisplay.querySelector(`[data-service-content="${selectedService}"]`);
                 if (contentToDisplay) {
                     contentToDisplay.style.display = 'block';
+                    contentToDisplay.style.flexGrow = '1'; // Ensure it can grow as needed
+                    contentToDisplay.style.minWidth = '100%'; // Prevent squishing
                 }
             }
         });
     });
 });
+
 
 
 /* 
@@ -240,94 +165,8 @@ function openForm() {
     }
 }
 
-
-
-/* ------------slider----------------- */
-
-var container = document.getElementById('container')
-var slider = document.getElementById('slider');
-var slides = document.getElementsByClassName('slide').length;
-var buttons = document.getElementsByClassName('btn');
-
-
-var currentPosition = 0;
-var currentMargin = 0;
-var slidesPerPage = 0;
-var slidesCount = slides - slidesPerPage;
-var containerWidth = container.offsetWidth;
-var prevKeyActive = false;
-var nextKeyActive = true;
-
-window.addEventListener("resize", checkWidth);
-
-function checkWidth() {
-    containerWidth = container.offsetWidth;
-    setParams(containerWidth);
-}
-
-function setParams(w) {
-    if (w < 551) {
-        slidesPerPage = 1;
-    } else {
-        if (w < 901) {
-            slidesPerPage = 2;
-        } else {
-            if (w < 1101) {
-                slidesPerPage = 3;
-            } else {
-                slidesPerPage = 4;
-            }
-        }
-    }
-    slidesCount = slides - slidesPerPage;
-    if (currentPosition > slidesCount) {
-        currentPosition -= slidesPerPage;
-    };
-    currentMargin = - currentPosition * (100 / slidesPerPage);
-    slider.style.marginLeft = currentMargin + '%';
-    if (currentPosition > 0) {
-        buttons[0].classList.remove('inactive');
-    }
-    if (currentPosition < slidesCount) {
-        buttons[1].classList.remove('inactive');
-    }
-    if (currentPosition >= slidesCount) {
-        buttons[1].classList.add('inactive');
-    }
-}
-
-setParams();
-
-function slideRight() {
-    if (currentPosition != 0) {
-        slider.style.marginLeft = currentMargin + (100 / slidesPerPage) + '%';
-        currentMargin += (100 / slidesPerPage);
-        currentPosition--;
-    };
-    if (currentPosition === 0) {
-        buttons[0].classList.add('inactive');
-    }
-    if (currentPosition < slidesCount) {
-        buttons[1].classList.remove('inactive');
-    }
-};
-
-function slideLeft() {
-    if (currentPosition != slidesCount) {
-        slider.style.marginLeft = currentMargin - (100 / slidesPerPage) + '%';
-        currentMargin -= (100 / slidesPerPage);
-        currentPosition++;
-    };
-    if (currentPosition == slidesCount) {
-        buttons[1].classList.add('inactive');
-    }
-    if (currentPosition > 0) {
-        buttons[0].classList.remove('inactive');
-    }
-};
-
 document.addEventListener("DOMContentLoaded", function () {
-    const rotatingTexts = ['Efficiently', 'Cheaply', 'Easily', 'Upto 128K Context'];
+    const rotatingTexts = ['AI at just ₹100', 'LLMs', 'AI Text to Voice', 'AI Voice to Text'];
     let currentIndex = 0;
     const rotatingTextElement = document.getElementById('rotating-text');
 
@@ -353,5 +192,146 @@ document.addEventListener("DOMContentLoaded", function () {
 
     changeText();
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    var video = document.querySelector('.waveform-video');
+    var button = document.querySelector('.video-control');
+
+    button.addEventListener('click', function () {
+        if (video.muted) {
+            video.muted = false;
+            video.currentTime = 0;
+            video.play();
+            button.textContent = 'Mute';
+        } else {
+            video.muted = true;
+            button.textContent = 'Unmute';
+        }
+    });
+
+    // Delayed autoplay
+    setTimeout(function () {
+        if (document.hasFocus()) {
+            video.play();
+        }
+    }, 5000); // Delay in milliseconds, adjust as needed
+
+    // Play/pause based on window focus
+    window.onfocus = function () {
+        if (!video.muted) {
+            video.play();
+        }
+    };
+    window.onblur = function () {
+        video.pause();
+    };
+});
+
+
+/* -- Background Dots */
+/* document.addEventListener('DOMContentLoaded', () => {
+    const homeContainer = document.querySelector('.home-container');
+  
+    homeContainer.addEventListener('mousemove', (e) => {
+      const rect = homeContainer.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left; // x position within the element.
+      const mouseY = e.clientY - rect.top;  // y position within the element.
+  
+      // Calculate percentage position
+      const posX = (mouseX / rect.width) * 100;
+      const posY = (mouseY / rect.height) * 100;
+  
+      // Adjust the background position
+      homeContainer.style.backgroundPosition = `${posX}% ${posY}%`;
+    });
+  
+    homeContainer.addEventListener('mouseleave', () => {
+      homeContainer.style.backgroundPosition = 'center';
+    });
+  }); */
+
+
+/* Particles */
+/* var container = document.querySelector('.home-container'); */
+var canvas = document.getElementById('test'),
+    ctx = canvas.getContext('2d'),
+    rate = 60,
+    arc = 100, // Number of particles
+    time = 0,
+    speed = 5,
+    parts = new Array(),
+    colors = ['#896acb', '#f58a0b', 'yellow', '#f24aa3'];
+var mouse = { x: 0, y: 0 };
+
+// Set canvas dimensions to full viewport
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+function create() {
+    parts = [];
+    for (var i = 0; i < arc; i++) {
+        parts.push({
+            x: Math.ceil(Math.random() * canvas.width),
+            y: Math.ceil(Math.random() * canvas.height),
+            toX: Math.random() * 5 - 1,
+            toY: Math.random() * 2 - 1,
+            c: colors[Math.floor(Math.random() * colors.length)],
+            size: Math.random() * 6 // Random size up to 6
+        });
+    }
+}
+
+function particles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (var i = 0; i < arc; i++) {
+        var li = parts[i];
+        var distanceFactor = DistanceBetween(mouse, li);
+        distanceFactor = Math.max(Math.min(15 - (distanceFactor / 10), 10), 1);
+
+        ctx.beginPath();
+        ctx.arc(li.x, li.y, li.size * distanceFactor, 0, Math.PI * 2, false);
+        ctx.fillStyle = li.c;
+        ctx.strokeStyle = li.c;
+
+        if (i % 2 == 0) ctx.stroke();
+        else ctx.fill();
+
+        li.x = li.x + li.toX * (time * 0.05);
+        li.y = li.y + li.toY * (time * 0.05);
+
+        if (li.x > canvas.width) li.x = 0;
+        if (li.y > canvas.height) li.y = 0;
+        if (li.x < 0) li.x = canvas.width;
+        if (li.y < 0) li.y = canvas.height;
+    }
+
+    if (time < speed) time++;
+    setTimeout(particles, 1000 / rate);
+}
+
+function MouseMove(e) {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+}
+
+function DistanceBetween(p1, p2) {
+    var dx = p2.x - p1.x;
+    var dy = p2.y - p1.y;
+    return Math.sqrt(dx * dx + dy * dy);
+}
+
+// Resize canvas when window is resized
+window.addEventListener('resize', function () {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    create();
+});
+
+canvas.addEventListener('mousemove', MouseMove, false);
+
+create();
+particles();
+
+
 
 /* ---------------------------------- */
