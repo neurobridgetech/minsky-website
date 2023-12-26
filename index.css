@@ -8,7 +8,6 @@
   background-color: #0f0f0f;
   align-items: center;
   flex-shrink: 1;
-  border-radius: 10px;
   padding-top: var(--dl-space-space-twounits);
   padding-left: var(--dl-space-space-oneandhalfunits);
   padding-right: var(--dl-space-space-oneandhalfunits);
@@ -455,7 +454,7 @@
   padding-left: var(--dl-space-space-oneandhalfunits);
   padding-right: var(--dl-space-space-oneandhalfunits);
   flex-direction: column;
-  border-bottom-width: 1px;
+  /* border-bottom-width: 1px; */
 }
 
 .home-hero {
