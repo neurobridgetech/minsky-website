@@ -1667,11 +1667,12 @@
 
 @media(max-width: 479px) {
   .home-header {
-    align-items: flex-start;
+    align-items: center;
   }
 
   .home-heading {
     max-width: 320px;
+    justify-content: center;
   }
 
   .home-image01 {
